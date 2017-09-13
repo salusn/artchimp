@@ -1,0 +1,31 @@
+name = Artchimp Subtheme
+description = Artchimp Subtheme.
+core = 7.x
+base theme = bootstrap
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Stylesheets
+;;;;;;;;;;;;;;;;;;;;;
+
+stylesheets[all][] = css/flexslider.css
+stylesheets[all][] = css/bootstrap.min.css
+stylesheets[all][] = css/icons-fonts.css
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/animate.min.css
+stylesheets[all][] = css/style-more.css
+
+
+scripts[] = js/bootstrap.min.js
+scripts[] = js/jquery.magnific-popup.min.js
+scripts[] = js/isotope.pkgd.min.js
+scripts[] = js/imagesloaded.pkgd.min.js
+scripts[] = js/masonry.pkgd.min.js
+scripts[] = js/jquery.countTo.js
+scripts[] = js/jquery.appear.js
+scripts[] = js/owl.carousel.min.js
+scripts[] = js/jquery.backgroundvideo.min.js
+scripts[] = js/main.js
+scripts[] = js/jquery.flexslider-min.js
+scripts[] = js/flex-slider.js
+

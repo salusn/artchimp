@@ -1,0 +1,1 @@
+<span class="<?php print $icon_pack_classes; ?> provider-<?php print drupal_strtolower($provider_name); ?>" title="<?php print $provider_name; ?>"></span>
