@@ -185,7 +185,7 @@ fieldset {
 	font-style: normal;
 	font-weight: bold
 }
-.page-title em::after { 
+.page-title em::after {
     content: " > ";
 }
 #edit-delete{
@@ -199,3 +199,7 @@ fieldset {
   padding: 5px 10px;
 }
 .form-wrapper{position: relative}
+.member-image img{
+  width: 100%;
+      border-radius: 50%;
+}

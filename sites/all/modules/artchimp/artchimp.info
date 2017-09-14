@@ -1,0 +1,7 @@
+name = Artchimp
+description =  Artchimp Custom Module Implementation.
+core = 7.x
+package = Artchimp
+
+
+

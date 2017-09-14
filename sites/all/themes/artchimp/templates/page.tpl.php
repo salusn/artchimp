@@ -108,12 +108,12 @@ print theme('links__system_main_menu', array('links' => $main_menu, 'attributes'
   <div class="container">
     <div class="row">
 
-      <?php if ($page['sidebar_second']): ?>
+      <?php if ($page['sidebar_first']): ?>
+        <div id="sidebar-second" class="col-sm-4 col-md-3 col-md-offset-1">
+          <?php print render($page['sidebar_first']);?>
+        </div>
         <div id="main-content" class="col-sm-8">
           <?php print render($page['content']);?>
-        </div>
-        <div id="sidebar-second" class="col-sm-4 col-md-3 col-md-offset-1">
-          <?php print render($page['sidebar_second']);?>
         </div>
       <?php else: ?>
         <?php print render($page['content']);?>
