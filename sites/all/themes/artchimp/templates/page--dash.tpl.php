@@ -1,5 +1,6 @@
-<?php global $theme_path, $base_url;
-$path_to_theme = $base_url . '/' . $theme_path;?>
+<?php global $base_url;
+$path_to_theme = $base_url . '/' . drupal_get_path('theme', 'artchimp');?>
+
 <div id="wrap" class="boxed admin-page">
   <div class="grey-bg">
 

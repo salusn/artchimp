@@ -1,5 +1,6 @@
-<?php global $theme_path, $base_url;
-$path_to_theme = $base_url . '/' . $theme_path;?>
+<?php global $base_url;
+$path_to_theme = $base_url . '/' . drupal_get_path('theme', 'artchimp');?>
+
 <div id="wrap" class="boxed ">
   <div class="grey-bg">
 
@@ -158,7 +159,7 @@ print theme('links__system_main_menu', array('links' => $main_menu, 'attributes'
               <div class="col-md-3 col-sm-3 widget">
                 <div class="logo-footer-cont">
                   <a href="<?php print $front_page;?>">
-                    <img class="logo-footer" src="<?php echo $path_to_theme; ?>/images/logo-footer-white.png" alt="logo">
+                    <img class="logo-footer" src="<?php echo $path_to_theme; ?>/images/logo.png" alt="logo">
                   </a>
                 </div>
                 <div class="footer-2-text-cont">

@@ -63,14 +63,6 @@ print theme('links__system_main_menu', array('links' => $main_menu, 'attributes'
   <!-- END main-menu-container -->
 
   <!-- SEARCH READ DOCUMENTATION -->
-  <ul class="cd-header-buttons">
-    <li><a class="cd-search-trigger" href="#cd-search"><span></span></a></li>
-  </ul> <!-- cd-header-buttons -->
-  <div id="cd-search" class="cd-search">
-    <form class="form-search" id="searchForm" action="page-search-results.html" method="get">
-      <input type="text" value="" name="q" id="q" placeholder="Search...">
-    </form>
-  </div>
 
   </div>
   <!-- END header-wrapper -->
@@ -100,12 +92,7 @@ print theme('links__system_main_menu', array('links' => $main_menu, 'attributes'
         <!-- SHOP INFO 1 -->
         <div class="shop-info grey-dark-bg font-white pt-110-b-80-cont">
           <div class="container">
-            <div class="row">
-              <div class="col-md-3 col-sm-6 text-center"><span class="icon icon-basic-globe"></span><h6 class="white-text ">Free Shipping</h6></div>
-              <div class="col-md-3 col-sm-6 text-center"><span class="icon icon-basic-life-buoy"></span><h6 class="white-text ">24/7 Customer Service</h6></div>
-              <div class="col-md-3 col-sm-6 text-center"><span class="icon icon-ecommerce-creditcard"></span><h6 class="white-text ">Payment Options</h6></div>
-              <div class="col-md-3 col-sm-6 text-center"><span class="icon icon-basic-clockwise"></span><h6 class="white-text ">30 Days Returns</h6></div>
-            </div>
+
           </div>
         </div>
 
@@ -114,57 +101,6 @@ print theme('links__system_main_menu', array('links' => $main_menu, 'attributes'
           <div class="container">
             <div class="row client-row border-bot">
 
-              <div class="col-xs-6 col-sm-2 client1-item ">
-                <img alt="client" src="<?php echo $path_to_theme; ?>/images/clients/1.png">
-              </div>
-
-              <div class="col-xs-6 col-sm-2 client1-item ">
-                <img alt="client" src="<?php echo $path_to_theme; ?>/images/clients/2.png">
-              </div>
-
-              <div class="col-xs-6 col-sm-2 client1-item ">
-                <img alt="client" src="<?php echo $path_to_theme; ?>/images/clients/3.png">
-              </div>
-
-              <div class="col-xs-6 col-sm-2 client1-item ">
-                <img alt="client" src="<?php echo $path_to_theme; ?>/images/clients/4.png">
-              </div>
-
-              <div class="col-xs-6 col-sm-2 client1-item ">
-                <img alt="client" src="<?php echo $path_to_theme; ?>/images/clients/9.png">
-              </div>
-
-              <div class="col-xs-6 col-sm-2 client1-item ">
-                <img alt="client" src="<?php echo $path_to_theme; ?>/images/clients/10.png">
-              </div>
-
-            </div>
-
-            <div class="row client-row">
-
-              <div class="col-xs-6 col-sm-2 client1-item ">
-                <img alt="client" src="<?php echo $path_to_theme; ?>/images/clients/5.png">
-              </div>
-
-              <div class="col-xs-6 col-sm-2 client1-item ">
-                <img alt="client" src="<?php echo $path_to_theme; ?>/images/clients/6.png">
-              </div>
-
-              <div class="col-xs-6 col-sm-2 client1-item ">
-                <img alt="client" src="<?php echo $path_to_theme; ?>/images/clients/7.png">
-              </div>
-
-              <div class="col-xs-6 col-sm-2 client1-item ">
-                <img alt="client" src="<?php echo $path_to_theme; ?>/images/clients/8.png">
-              </div>
-
-              <div class="col-xs-6 col-sm-2 client1-item ">
-                <img alt="client" src="<?php echo $path_to_theme; ?>/images/clients/11.png">
-              </div>
-
-              <div class="col-xs-6 col-sm-2 client1-item">
-                <img alt="client" src="<?php echo $path_to_theme; ?>/images/clients/12.png">
-              </div>
 
             </div>
 
@@ -177,7 +113,7 @@ print theme('links__system_main_menu', array('links' => $main_menu, 'attributes'
             <div class="relative" >
               <div id="mc_embed_signup" class="nl-form-container clearfix">
                 <form action="http://abcgomel.us9.list-manage.com/subscribe/post-json?u=ba37086d08bdc9f56f3592af0&amp;id=e38247f7cc&amp;c=?" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="newsletterform validate" target="_blank" novalidate>   <!-- EDIT THIS ACTION URL (add "post-json?u" instead of "post?u" and appended "&amp;c=?" to the end of this URL) -->
-                  <input type="email" value="" name="EMAIL" class="email nl-email-input" id="mce-EMAIL" placeholder="Enter your email" required>
+                  <input type="email" value="" name="EMAIL" class="email nl-email-input" id="mce-EMAIL" placeholder="Your@email.com" required>
                   <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                   <div style="position: absolute; left: -5000px;"><input type="text" name="b_ba37086d08bdc9f56f3592af0_e38247f7cc" tabindex="-1" value=""></div>
 
@@ -198,7 +134,7 @@ print theme('links__system_main_menu', array('links' => $main_menu, 'attributes'
               <div class="col-md-3 col-sm-3 widget">
                 <div class="logo-footer-cont">
                   <a href="<?php print $front_page;?>">
-                    <img class="logo-footer" src="<?php echo $path_to_theme; ?>/images/logo-footer-white.png" alt="logo">
+                    <img class="logo-footer" src="<?php echo $path_to_theme; ?>/images/logo.png" alt="logo">
                   </a>
                 </div>
                 <div class="footer-2-text-cont">
