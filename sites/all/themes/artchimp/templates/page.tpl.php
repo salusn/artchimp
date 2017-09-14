@@ -1,4 +1,5 @@
-<?php global $theme_path,$base_url; $path_to_theme = $base_url.'/'.$theme_path; ?>
+<?php global $theme_path, $base_url;
+$path_to_theme = $base_url . '/' . $theme_path;?>
 <div id="wrap" class="boxed ">
   <div class="grey-bg">
 
@@ -14,10 +15,10 @@
         <div class="logo-2">
 
         <?php if ($logo): ?>
-          <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo" class="clearfix">
-            <img src="<?php print $logo; ?>"  class="logo-img" alt="<?php print t('Home'); ?>" />
+          <a href="<?php print $front_page;?>" title="<?php print t('Home');?>" rel="home" id="logo" class="clearfix">
+            <img src="<?php print $logo;?>"  class="logo-img" alt="<?php print t('Home');?>" />
           </a>
-        <?php endif; ?>
+        <?php endif;?>
 
         </div>
       </div>
@@ -43,8 +44,8 @@
           <nav class="collapse collapsing navbar-collapse right-1024">
 
              <?php
-             print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('class' => array('nav', 'navbar-nav'))));
-             ?>
+print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('class' => array('nav', 'navbar-nav'))));
+?>
 
           </nav>
           </div>
@@ -79,14 +80,14 @@
     <div class="row">
 
       <div class="col-md-8">
-        <h1 class="page-title"><?php print $title; ?></h1>
+        <h1 class="page-title"><?php print $title;?></h1>
       </div>
 
       <div class="col-md-4">
 
         <?php if ($breadcrumb): ?>
-          <div class="breadcrumbs"><?php print $breadcrumb; ?></div>
-        <?php endif; ?>
+          <div class="breadcrumbs"><?php print $breadcrumb;?></div>
+        <?php endif;?>
 
       </div>
 
@@ -94,13 +95,13 @@
   </div>
 </div>
 
-<?php if ($messages) : ?>
+<?php if ($messages): ?>
   <div class="page-section pt-80">
     <div class="container">
-      <?php print $messages; ?>
+      <?php print $messages;?>
     </div>
   </div>
-<?php endif; ?>
+<?php endif;?>
 
 <div class="page-section p-80-cont">
   <div class="container">
@@ -108,25 +109,25 @@
 
       <?php if ($page['sidebar_second']): ?>
         <div id="main-content" class="col-sm-8">
-          <?php print render($page['content']); ?>
+          <?php print render($page['content']);?>
         </div>
         <div id="sidebar-second" class="col-sm-4 col-md-3 col-md-offset-1">
-          <?php print render($page['sidebar_second']); ?>
+          <?php print render($page['sidebar_second']);?>
         </div>
       <?php else: ?>
-        <?php print render($page['content']); ?>
-      <?php endif; ?>
+        <?php print render($page['content']);?>
+      <?php endif;?>
 
    </div>
  </div>
 </div>
 
-<?php if ($page['content_footer']): ?>
+<?php if ($page['content_footer']): ?>fdfddfd
 <hr class="mt-0 mb-80">
 <div class="container">
-   <?php print render($page['content_footer']); ?>
+   <?php print render($page['content_footer']);?>
 </div>
-<?php endif; ?>
+<?php endif;?>
 
 
 <!-- NEWS LETTER -->
@@ -156,7 +157,7 @@
 
               <div class="col-md-3 col-sm-3 widget">
                 <div class="logo-footer-cont">
-                  <a href="<?php print $front_page; ?>">
+                  <a href="<?php print $front_page;?>">
                     <img class="logo-footer" src="<?php echo $path_to_theme; ?>/images/logo-footer-white.png" alt="logo">
                   </a>
                 </div>
@@ -178,24 +179,24 @@
               <div class="col-md-3 col-sm-3 widget">
                 <h4>NAVIGATE</h4>
                 <ul class="links-list bold a-text-cont">
-                  <li><a href="<?php print $front_page; ?>">HOME</a></li>
-                  <li><a href="<?php print $front_page; ?>">GRID SYSTEM</a></li>
-                  <li><a href="<?php print $front_page; ?>">SERVICES</a></li>
-                  <li><a href="<?php print $front_page; ?>">PORTFOLIO</a></li>
-                  <li><a href="<?php print $front_page; ?>">BLOG</a></li>
-                  <li><a href="<?php print $front_page; ?>">SHOP</a></li>
-                  <li><a href="<?php print $front_page; ?>">PAGES</a></li>
+                  <li><a href="<?php print $front_page;?>">HOME</a></li>
+                  <li><a href="<?php print $front_page;?>">GRID SYSTEM</a></li>
+                  <li><a href="<?php print $front_page;?>">SERVICES</a></li>
+                  <li><a href="<?php print $front_page;?>">PORTFOLIO</a></li>
+                  <li><a href="<?php print $front_page;?>">BLOG</a></li>
+                  <li><a href="<?php print $front_page;?>">SHOP</a></li>
+                  <li><a href="<?php print $front_page;?>">PAGES</a></li>
                 </ul>
               </div>
 
               <div class="col-md-3 col-sm-3 widget">
                 <h4>INFO</h4>
                 <ul class="links-list a-text-cont" >
-                  <li><a href="<?php print $front_page; ?>">COMPANY</a></li>
-                  <li><a href="<?php print $front_page; ?>">WHAT WE DO</a></li>
-                  <li><a href="<?php print $front_page; ?>">HELP CENTER</a></li>
-                  <li><a href="<?php print $front_page; ?>">TERMS OF SERVICE</a></li>
-                  <li><a href="<?php print $front_page; ?>">CONTACT</a></li>
+                  <li><a href="<?php print $front_page;?>">COMPANY</a></li>
+                  <li><a href="<?php print $front_page;?>">WHAT WE DO</a></li>
+                  <li><a href="<?php print $front_page;?>">HELP CENTER</a></li>
+                  <li><a href="<?php print $front_page;?>">TERMS OF SERVICE</a></li>
+                  <li><a href="<?php print $front_page;?>">CONTACT</a></li>
                 </ul>
               </div>
 

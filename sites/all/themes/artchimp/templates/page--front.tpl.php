@@ -1,7 +1,8 @@
-<?php global $theme_path,$base_url; $path_to_theme = $base_url.'/'.$theme_path;
-$youtube_array = explode("," , variable_get('youtube_id', 'WUp94g-4pvs'));
-$youtube_id = $youtube_array[array_rand($youtube_array)];
-?>
+
+<?php global $base_url;
+$path_to_theme = $base_url . '/' . drupal_get_path('theme', 'artchimp');?>
+
+
 <div id="wrap" class="boxed ">
   <div class="grey-bg">
 
@@ -18,10 +19,10 @@ $youtube_id = $youtube_array[array_rand($youtube_array)];
         <div class="logo-2">
 
         <?php if ($logo): ?>
-          <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo" class="clearfix">
-            <img src="<?php print $logo; ?>"  class="logo-img" alt="<?php print t('Home'); ?>" />
+          <a href="<?php print $front_page;?>" title="<?php print t('Home');?>" rel="home" id="logo" class="clearfix">
+            <img src="<?php print $logo;?>"  class="logo-img" alt="<?php print t('Home');?>" />
           </a>
-        <?php endif; ?>
+        <?php endif;?>
 
         </div>
       </div>
@@ -47,8 +48,8 @@ $youtube_id = $youtube_array[array_rand($youtube_array)];
           <nav class="collapse collapsing navbar-collapse right-1024">
 
              <?php
-             print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('class' => array('nav', 'navbar-nav'))));
-             ?>
+print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('class' => array('nav', 'navbar-nav'))));
+?>
 
           </nav>
           </div>
@@ -79,37 +80,9 @@ $youtube_id = $youtube_array[array_rand($youtube_array)];
 <div class="homepage-hero-module">
     <div class="video-container">
 
-
-
-       <!--  <video autoplay loop class="fillWidth">
-            <source src="<?php //echo $path_to_theme; ?>/videos/sm-video.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.</video> -->
-
-            <iframe frameborder="0" height="100%" width="100%"
-    src="https://youtube.com/embed/<?php echo $youtube_id; ?>?autoplay=1&loop=1&controls=0&showinfo=0&autohide=1&rel=0&playlist=<?php echo $youtube_id; ?>">
-  </iframe>
-
-
         <div class="container sm-content-cont text-center title-container">
             <div class="sm-cont-middle">
 
-              <div class="opacity-scroll2">
-
-
-                <div class="font-white light-72-wide sm-mb-15 sm-mt-20" >
-                  WE ARE <span class="bold">ADIDAS</span>
-                </div>
-
-
-                <div class="font-white norm-16-wide hide-0-736 sm-mb-50">
-                  SHOES<span class="slash-divider-10">/</span>DESIGN<span class="slash-divider-10">/</span>BRANDING<span class="slash-divider-10">/</span>PHOTO
-                </div>
-
-
-                <div class="center-0-478">
-                  <a class="button medium thin hover-dark tp-button white" href="<?php echo url('node/3'); ?>">SEE MORE</a><a class="button medium thin hover-dark tp-button white ml-20" href="<?php echo url('products'); ?>">PRODUCTS</a>
-                </div>
-
-              </div>
 
             </div>
           </div>
@@ -119,41 +92,10 @@ $youtube_id = $youtube_array[array_rand($youtube_array)];
 
 <div class="container">
 
-
-
 </div>
 
-        <!-- STATIC MEDIA IMAGE -->
-        <!-- <div class="sm-img-bg" style="background-image: url(<?php //echo $path_to_theme; ?>/images/flexslider/shop2.jpg)">
 
-
-          <div class="container sm-content-cont text-center">
-            <div class="sm-cont-middle">
-
-              <div class="opacity-scroll2">
-
-
-                <div class="font-white light-72-wide sm-mb-15 sm-mt-20" >
-                  WE ARE <span class="bold">ADIDAS</span>
-                </div>
-
-
-                <div class="font-white norm-16-wide hide-0-736 sm-mb-50">
-                  SHOES<span class="slash-divider-10">/</span>DESIGN<span class="slash-divider-10">/</span>BRANDING<span class="slash-divider-10">/</span>PHOTO
-                </div>
-
-
-                <div class="center-0-478">
-                  <a class="button medium thin hover-dark tp-button white" href="http://themeforest.net/user/abcgomel/portfolio?ref=abcgomel">SEE MORE</a><a class="button medium thin hover-dark tp-button white ml-20" href="http://themeforest.net/user/abcgomel/portfolio?ref=abcgomel">PURCHASE</a>
-                </div>
-
-              </div>
-
-            </div>
-          </div>
-        </div> -->
-
- <?php print render($page['content_front']); ?>
+ <?php print render($page['content_front']);?>
 
         <!-- SHOP INFO 1 -->
         <div class="shop-info grey-dark-bg font-white pt-110-b-80-cont">
@@ -255,7 +197,7 @@ $youtube_id = $youtube_array[array_rand($youtube_array)];
 
               <div class="col-md-3 col-sm-3 widget">
                 <div class="logo-footer-cont">
-                  <a href="<?php print $front_page; ?>">
+                  <a href="<?php print $front_page;?>">
                     <img class="logo-footer" src="<?php echo $path_to_theme; ?>/images/logo-footer-white.png" alt="logo">
                   </a>
                 </div>
@@ -277,24 +219,24 @@ $youtube_id = $youtube_array[array_rand($youtube_array)];
               <div class="col-md-3 col-sm-3 widget">
                 <h4>NAVIGATE</h4>
                 <ul class="links-list bold a-text-cont">
-                  <li><a href="<?php print $front_page; ?>">HOME</a></li>
-                  <li><a href="<?php print $front_page; ?>">GRID SYSTEM</a></li>
-                  <li><a href="<?php print $front_page; ?>">SERVICES</a></li>
-                  <li><a href="<?php print $front_page; ?>">PORTFOLIO</a></li>
-                  <li><a href="<?php print $front_page; ?>">BLOG</a></li>
-                  <li><a href="<?php print $front_page; ?>">SHOP</a></li>
-                  <li><a href="<?php print $front_page; ?>">PAGES</a></li>
+                  <li><a href="<?php print $front_page;?>">HOME</a></li>
+                  <li><a href="<?php print $front_page;?>">GRID SYSTEM</a></li>
+                  <li><a href="<?php print $front_page;?>">SERVICES</a></li>
+                  <li><a href="<?php print $front_page;?>">PORTFOLIO</a></li>
+                  <li><a href="<?php print $front_page;?>">BLOG</a></li>
+                  <li><a href="<?php print $front_page;?>">SHOP</a></li>
+                  <li><a href="<?php print $front_page;?>">PAGES</a></li>
                 </ul>
               </div>
 
               <div class="col-md-3 col-sm-3 widget">
                 <h4>INFO</h4>
                 <ul class="links-list a-text-cont" >
-                  <li><a href="<?php print $front_page; ?>">COMPANY</a></li>
-                  <li><a href="<?php print $front_page; ?>">WHAT WE DO</a></li>
-                  <li><a href="<?php print $front_page; ?>">HELP CENTER</a></li>
-                  <li><a href="<?php print $front_page; ?>">TERMS OF SERVICE</a></li>
-                  <li><a href="<?php print $front_page; ?>">CONTACT</a></li>
+                  <li><a href="<?php print $front_page;?>">COMPANY</a></li>
+                  <li><a href="<?php print $front_page;?>">WHAT WE DO</a></li>
+                  <li><a href="<?php print $front_page;?>">HELP CENTER</a></li>
+                  <li><a href="<?php print $front_page;?>">TERMS OF SERVICE</a></li>
+                  <li><a href="<?php print $front_page;?>">CONTACT</a></li>
                 </ul>
               </div>
 

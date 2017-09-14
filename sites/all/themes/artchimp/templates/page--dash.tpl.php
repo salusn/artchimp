@@ -1,4 +1,5 @@
-<?php global $theme_path,$base_url; $path_to_theme = $base_url.'/'.$theme_path; ?>
+<?php global $theme_path, $base_url;
+$path_to_theme = $base_url . '/' . $theme_path;?>
 <div id="wrap" class="boxed admin-page">
   <div class="grey-bg">
 
@@ -14,10 +15,10 @@
         <div class="logo-2">
 
         <?php if ($logo): ?>
-          <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo" class="clearfix">
-            <img src="<?php print $logo; ?>"  class="logo-img" alt="<?php print t('Home'); ?>" />
+          <a href="<?php print $front_page;?>" title="<?php print t('Home');?>" rel="home" id="logo" class="clearfix">
+            <img src="<?php print $logo;?>"  class="logo-img" alt="<?php print t('Home');?>" />
           </a>
-        <?php endif; ?>
+        <?php endif;?>
 
         </div>
       </div>
@@ -43,8 +44,8 @@
           <nav class="collapse collapsing navbar-collapse right-1024">
 
              <?php
-             print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('class' => array('nav', 'navbar-nav'))));
-             ?>
+print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('class' => array('nav', 'navbar-nav'))));
+?>
 
           </nav>
           </div>
@@ -81,7 +82,7 @@
         <h1 class="page-title">Admin Panel<?php //print $title; ?></h1>
       </div>
       <div class="col-md-12">
-        <?php if ($tabs && $menu_position == "top"): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
+        <?php if ($tabs && $menu_position == "top"): ?><div class="tabs"><?php print render($tabs);?></div><?php endif;?>
       </div>
     </div>
   </div>
@@ -90,45 +91,45 @@
 <div class="page-section p-20-cont page-dash">
   <div class="container relating-wrapper <?php echo ($title) ? "" : "no-title"; ?>">
 
-   <?php if ($title) : ?>
+   <?php if ($title): ?>
     <div class="row">
       <div class="col-md-12">
-        <h3><?php print $title; ?></h3>
+        <h3><?php print $title;?></h3>
       </div>
     </div>
-    <?php endif; ?>
+    <?php endif;?>
 
-   <?php if ($tabs2) : ?>
+   <?php if ($tabs2): ?>
     <div class="row">
       <div class="col-md-12">
-        <?php print render($tabs2); ?>
+        <?php print render($tabs2);?>
       </div>
     </div>
-    <?php endif; ?>
+    <?php endif;?>
 
-   <?php if ($messages) : ?>
+   <?php if ($messages): ?>
     <div class="row">
       <div class="col-md-12">
-        <?php print $messages; ?>
+        <?php print $messages;?>
       </div>
     </div>
-    <?php endif; ?>
+    <?php endif;?>
 
     <div class="row">
 
       <?php if ($page['sidebar_second'] || ($tabs && $menu_position == "left")): ?>
         <div id="sidebar-second" class="col-sm-4 col-md-3">
-          <?php if ($tabs && $menu_position == "left"): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
-          <?php print render($page['sidebar_second']); ?>
+          <?php if ($tabs && $menu_position == "left"): ?><div class="tabs"><?php print render($tabs);?></div><?php endif;?>
+          <?php print render($page['sidebar_second']);?>
         </div>
         <div id="main-content" class="col-sm-8 col-md-9">
-          <?php print render($page['content']); ?>
+          <?php print render($page['content']);?>
         </div>
       <?php else: ?>
       <div id="main-content" class="col-md-12">
-        <?php print render($page['content']); ?>
+        <?php print render($page['content']);?>
       </div>
-      <?php endif; ?>
+      <?php endif;?>
 
    </div>
  </div>
@@ -137,9 +138,9 @@
 <?php if ($page['content_footer']): ?>
 <hr class="mt-0 mb-80">
 <div class="container">
-   <?php print render($page['content_footer']); ?>
+   <?php print render($page['content_footer']);?>
 </div>
-<?php endif; ?>
+<?php endif;?>
 
 
 <!-- FOOTER 2 BLACK -->
