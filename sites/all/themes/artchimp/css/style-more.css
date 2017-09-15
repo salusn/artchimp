@@ -201,5 +201,10 @@ fieldset {
 .form-wrapper{position: relative}
 .member-image img{
   width: 100%;
-      border-radius: 50%;
+}
+.post-img,.post-text {
+      margin-bottom: 25px;
+}
+.location-hidden {
+  display: none
 }
