@@ -6,8 +6,8 @@
 */
 function artchimp_menu() {
 
-  $items['admin/exhibition/%'] = array( 
-    'title' => 'Artists Works Form', 
+  $items['settings/exhibition/%'] = array( 
+    'title' => 'Select Works', 
     'description' => 'Artists works are listed here',
     'page callback' => 'drupal_get_form', 
     'page arguments' => array('artists_work_form'), 
