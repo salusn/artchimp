@@ -34,16 +34,13 @@ hide($content['field_artist_id']);
 print render($content);
 ?>
         </div>
-        <?php global $user;?>
         <div class="post-text">
           <?php print render($content['body']);?>
         </div>
-        <?php
-
-if (isset($user->roles[3]) || isset($user->roles[4])) {?>
-        <a href="<?php echo url('admin/exhibition/' . $node->nid) ?>">Add Works</a>
-        <?php }?>
         <?php if ($page): ?>
+          <?php if (isset($user->roles[3]) || isset($user->roles[4])) {?>
+<a href="<?php echo url('settings/exhibition/' . $node->nid) ?>">Add Works</a>
+<?php }?>
           <hr class="mt-0 mb-0">
            <h3>Artists</h3>
             <?php print views_embed_view('list_exhibitions', 'block_2');?>
