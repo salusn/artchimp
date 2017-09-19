@@ -1,0 +1,15 @@
+<?php
+/**
+ * @file
+ * EntityReference Hidden module file.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function entityreference_hidden_install() {
+  db_update('system')
+    ->fields(array('weight' => 100))
+    ->condition('name', 'entityreference_hidden', '=')
+    ->execute();
+}

@@ -1,0 +1,13 @@
+name = "EntityReference Hidden Field Reference"
+description = "Provides a hidden field widget for an Entity Reference field.  This field will get populated by passing a query parameter with the name of the field and the value to set for it."
+package = "Fields"
+core = "7.x"
+
+dependencies[] = entityreference
+dependencies[] = hidden_field
+; Information added by Drupal.org packaging script on 2015-09-09
+version = "7.x-1.0-beta2"
+core = "7.x"
+project = "entityreference_hidden"
+datestamp = "1441791240"
+
