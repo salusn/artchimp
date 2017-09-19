@@ -60,7 +60,7 @@ function artists_work_form() {
 $form['exhibition_id'] = array('#type' => 'hidden', '#value' => $nid);
 $form['submit_button'] = array(
     '#type' => 'submit',
-    '#value' => t('Click Here!'),
+    '#value' => t('Add Work'),
   );
   return $form;
 }
