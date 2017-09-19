@@ -1,0 +1,86 @@
+<?php
+
+
+/**
+* Implements hook_menu().
+*/
+function artchimp_menu() {
+
+  $items['admin/exhibition/%'] = array( 
+    'title' => 'Artists Works Form', 
+    'description' => 'Artists works are listed here',
+    'page callback' => 'drupal_get_form', 
+    'page arguments' => array('artists_work_form'), 
+    'access callback' => TRUE
+  );
+
+  return $items;
+}
+
+
+function artists_work_form() {
+  
+  $nid = arg(2);
+  $node = node_load($nid);
+
+  $default_value = array();
+
+  if(isset($node->field_exhibition_hidden['und'])) {
+    foreach ($node->field_exhibition_hidden['und'] as $k => $v) {
+      $default_value[] = $v['target_id'];
+    }
+  }
+  
+  $works = array();
+
+  $artist = node_load($nid);
+  $artist_id = $artist->field_artist_id['und'];
+
+  foreach($artist_id as $id) {
+  	
+  	$art_id = $id['target_id'];
+  	$work = views_get_view_result('list_works','block_2', $art_id);  	
+    $works = array_merge($works,$work);
+  }
+
+  $vals = array();
+  foreach($works as $value) {
+  $vals[$value->nid] = $value->node_title;
+
+  $form['artist_works'] = array(
+     '#type' => 'checkboxes',
+     '#title' => t('Artists Works'),
+     '#options' => $vals, 
+     '#default_value' =>  $default_value,
+     '#description' => t('Choose as many as you want'),
+  );
+  
+}
+
+$form['exhibition_id'] = array('#type' => 'hidden', '#value' => $nid);
+$form['submit_button'] = array(
+    '#type' => 'submit',
+    '#value' => t('Click Here!'),
+  );
+  return $form;
+}
+
+function form_example_form_validate($form, &$form_state) {
+}
+
+
+function artists_work_form_submit($form, &$form_state) {
+  $exhibition_node = arg(2);
+  $work_id = array_filter($form_state['values']['artist_works']);
+  $work_id = array_values($work_id);
+  
+  $exhi_node = node_load($exhibition_node);
+  $exhi_node->field_exhibition_hidden[LANGUAGE_NONE] = array();
+  foreach ($work_id as $key => $value) {
+    $exhi_node->field_exhibition_hidden[LANGUAGE_NONE][$key]['target_id'] = $value;
+    $exhi_node->field_exhibition_hidden[LANGUAGE_NONE][$key]['target_type'] = "node";
+  }
+  node_save($exhi_node);
+  $form_state['redirect'] = 'node/'.$exhibition_node;
+  drupal_set_message(t('The form has been submitted.'));
+}
