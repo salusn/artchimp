@@ -1,4 +1,5 @@
 <div id="node-<?php print $node->nid;?>" class="<?php print $classes;?> clearfix"<?php print $attributes;?>>
+
   <div class="content"<?php print $content_attributes;?>>
     <div class="blog-post">
 
@@ -23,7 +24,6 @@
        <div class="post-prev-more-cont clearfix">
    	 <?php echo render($content['field_exhibition_date']); ?>
        </div>
-
         <div class="post-prev-info">
           <?php
 // We hide the comments and links now so that we can render them later.
@@ -34,17 +34,23 @@ hide($content['field_artist_id']);
 print render($content);
 ?>
         </div>
-
+        <?php global $user;?>
         <div class="post-text">
           <?php print render($content['body']);?>
         </div>
+        <?php
 
+if (isset($user->roles[3]) || isset($user->roles[4])) {?>
+        <a href="<?php echo url('admin/exhibition/' . $node->nid) ?>">Add Works</a>
+        <?php }?>
         <?php if ($page): ?>
           <hr class="mt-0 mb-0">
            <h3>Artists</h3>
             <?php print views_embed_view('list_exhibitions', 'block_2');?>
+            <hr class="mt-0 mb-0">
+            <h3>Selected Works</h3>
+            <?php print views_embed_view('list_works', 'block_3');?>
         <?php endif;?>
-
 
     </div>
   </div>
