@@ -109,7 +109,7 @@ print theme('links__system_main_menu', array('links' => $main_menu, 'attributes'
     <div class="row">
 
       <?php if ($page['sidebar_first']): ?>
-        <div id="sidebar-second" class="col-sm-4 col-md-3 col-md-offset-1">
+        <div id="sidebar-second" class="col-sm-4 col-md-3">
           <?php print render($page['sidebar_first']);?>
         </div>
         <div id="main-content" class="col-sm-8">

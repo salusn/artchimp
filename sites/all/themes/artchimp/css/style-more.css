@@ -208,3 +208,6 @@ fieldset {
 .location-hidden {
   display: none
 }
+.view-header {
+  margin-bottom: 10px;
+}
