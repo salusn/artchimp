@@ -211,3 +211,6 @@ fieldset {
 .view-header {
   margin-bottom: 10px;
 }
+.date-display-range {
+  display: none;
+}
