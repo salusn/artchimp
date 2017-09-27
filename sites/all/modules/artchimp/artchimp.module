@@ -17,6 +17,18 @@ function artchimp_menu() {
   return $items;
 }
 
+function artchimp_form_alter(&$form, &$form_state, $form_id) {
+
+  global $user;
+    switch ($form_id) {
+      case "exhibition_node_form";
+      //print_r($form);exit;
+       // $form['#submit'][] = 'light_misc_login_form_submit';
+      $form['field_exhibition_hidden']['#access'] = 0;
+      break;
+     } 
+}
+
 
 function artists_work_form() {
   
