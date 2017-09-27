@@ -45,17 +45,18 @@
 
   <?php endif;?>
 
-  <?php if (!$page): ?>
+  <?php //if (!$page): ?>
 
-    <div class="post-prev-img">
-     <?php print render($content['field_photo']);?>
-   </div>
+    <!-- <div class="post-prev-img">VP ENGINEERING
+     <?php //print render($content['field_photo']);?>
+    </div> -->
 
-    <div class="post-prev-title mb-5">
-    <h3<?php print $title_attributes;?>><a href="<?php print $node_url;?>"><?php print $title;?></a></h3>
-  </div>
 
-  <?php endif;?>
+    <!-- <div class="post-prev-title mb-5">
+    <h3<?php //print $title_attributes;?>><a href="<?php //print $node_url;?>"><?php //print $title;?></a></h3>
+    </div> -->
+
+  <?php //endif;?>
 
     </div>
   </div>
