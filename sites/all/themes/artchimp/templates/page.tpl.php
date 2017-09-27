@@ -162,18 +162,18 @@ print theme('links__system_main_menu', array('links' => $main_menu, 'attributes'
                     <img class="logo-footer" src="<?php echo $path_to_theme; ?>/images/logo.png" alt="logo">
                   </a>
                 </div>
-                <div class="footer-2-text-cont">
+                <!-- <div class="footer-2-text-cont">
                   <address>
                     555 California str, Suite 100<br>
                     San&nbsp;Francisco, CA 94107
                   </address>
-                </div>
-                <div class="footer-2-text-cont">
+                </div> -->
+                <!-- <div class="footer-2-text-cont">
                   1-800-312-2121<br>
                   1-800-310-1010
-                </div>
+                </div> -->
                 <div class="footer-2-text-cont">
-                  <a class="a-text" href="mailto:info@adidas.com">info@adidas.com</a>
+                  <a class="a-text" href="mailto:info@adidas.com">info@artchimp.com</a>
                 </div>
               </div>
             </div>
