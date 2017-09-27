@@ -178,19 +178,6 @@ print theme('links__system_main_menu', array('links' => $main_menu, 'attributes'
               </div>
 
               <div class="col-md-3 col-sm-3 widget">
-                <h4>NAVIGATE</h4>
-                <ul class="links-list bold a-text-cont">
-                  <li><a href="<?php print $front_page;?>">HOME</a></li>
-                  <li><a href="<?php print $front_page;?>">GRID SYSTEM</a></li>
-                  <li><a href="<?php print $front_page;?>">SERVICES</a></li>
-                  <li><a href="<?php print $front_page;?>">PORTFOLIO</a></li>
-                  <li><a href="<?php print $front_page;?>">BLOG</a></li>
-                  <li><a href="<?php print $front_page;?>">SHOP</a></li>
-                  <li><a href="<?php print $front_page;?>">PAGES</a></li>
-                </ul>
-              </div>
-
-              <div class="col-md-3 col-sm-3 widget">
                 <h4>INFO</h4>
                 <ul class="links-list a-text-cont" >
                   <li><a href="<?php print $front_page;?>">COMPANY</a></li>
@@ -199,25 +186,6 @@ print theme('links__system_main_menu', array('links' => $main_menu, 'attributes'
                   <li><a href="<?php print $front_page;?>">TERMS OF SERVICE</a></li>
                   <li><a href="<?php print $front_page;?>">CONTACT</a></li>
                 </ul>
-              </div>
-
-              <div class="col-md-3 col-sm-3 widget">
-                <h4>RECENT TWEETS</h4>
-                <div id="post-list-footer">
-
-                  <div class="post-prev-title">
-                    <h3><a class="a-text"  href="http://a.did.as/6007BmEff" target="_blank">New Colors, same style. Tubular Doom is back in a big way. Tonal Black & Pink available now </a></h3>
-                  </div>
-
-                  <div class="post-prev-title">
-                    <h3><a class="a-text"  href="https://twitter.com/adidasoriginals" target="_blank">@Pharrell's 'Pink Beach' collection for #adidasOriginals lands with a Consortium+ range May 5th.</a></h3>
-                  </div>
-
-                  <div class="post-prev-title">
-                    <h3><a class="a-text"  href="https://twitter.com/adidasoriginals" target="_blank">Next up in the #XENO Spectrum pack, black Superstar, is here. Watch for more drops to come/a></h3>
-                  </div>
-
-                </div>
               </div>
             </div>
 
