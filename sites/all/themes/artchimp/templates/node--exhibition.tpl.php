@@ -7,6 +7,7 @@
          <?php print render($content['field_photo']);?>
        </div>
 
+      <?php //exhibition listing?>
        <?php print render($title_prefix);?>
        <?php if (!$page): ?>
          <div class="post-prev-title mb-5">
@@ -15,8 +16,10 @@
          </h3>
        </div>
        <?php endif;?>
-       <?php print render($title_suffix);?>
+        <?php //end exhibition listing?>
 
+         <?php //exhibition detail?>
+       <?php print render($title_suffix);?>
        <div class="shop-price-cont">
          <?php echo render($content['field_location']); ?>
        </div>
@@ -27,6 +30,7 @@
         <div class="post-prev-info">
           <?php
 // We hide the comments and links now so that we can render them later.
+// VP ENGINEERING
 hide($content['comments']);
 hide($content['links']);
 hide($content['body']);
