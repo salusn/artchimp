@@ -190,7 +190,7 @@ print theme('links__system_main_menu', array('links' => $main_menu, 'attributes'
 
               <!-- Copyright -->
               <div class="left">
-                <a class="footer-2-copy" href="http://www.adidas.co.in/" target="_blank">&copy; ADIDAS 2016</a>
+                <a class="footer-2-copy" href="http://www.adidas.co.in/" target="_blank">&copy; ARTCHIMP 2016</a>
               </div>
 
 
