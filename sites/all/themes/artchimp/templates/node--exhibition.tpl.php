@@ -6,7 +6,6 @@
         <div class="<?php echo ($page) ? "post-img" : "post-prev-img"; ?>">
          <?php print render($content['field_photo']);?>
        </div>
-
       <?php //exhibition listing?>
        <?php print render($title_prefix);?>
        <?php if (!$page): ?>
@@ -21,11 +20,14 @@
          <?php //exhibition detail?>
        <?php print render($title_suffix);?>
        <div class="shop-price-cont">
-         <?php echo render($content['field_location']); ?>
+         <?php echo render($content['field_location_new']); ?>
        </div>
-
+<?php
+$startDate = date("d F", strtotime($node->field_exhibition_date['und']['0']['value']));
+$endDate = date("d F Y", strtotime($node->field_exhibition_date['und']['0']['value2']));
+?>
        <div class="post-prev-more-cont clearfix">
-   	 <?php echo render($content['field_exhibition_date']); ?>
+   	 <?php echo $startDate ?> - <?php echo $endDate; ?>
        </div>
         <div class="post-prev-info">
           <?php
@@ -47,7 +49,7 @@ print render($content);
 <?php }?>
           <hr class="mt-0 mb-0">
            <h3>Artists</h3>
-            <?php print views_embed_view('list_exhibitions', 'block_2');?>
+            <?php //print views_embed_view('list_exhibitions', 'block_2');?>
             <hr class="mt-0 mb-0">
             <h3>Selected Works</h3>
             <?php print views_embed_view('list_works', 'block_3');?>
