@@ -176,17 +176,6 @@ print theme('links__system_main_menu', array('links' => $main_menu, 'attributes'
                   <a class="a-text" href="mailto:info@adidas.com">info@adidas.com</a>
                 </div>
               </div>
-
-              <div class="col-md-3 col-sm-3 widget">
-                <h4>INFO</h4>
-                <ul class="links-list a-text-cont" >
-                  <li><a href="<?php print $front_page;?>">COMPANY</a></li>
-                  <li><a href="<?php print $front_page;?>">WHAT WE DO</a></li>
-                  <li><a href="<?php print $front_page;?>">HELP CENTER</a></li>
-                  <li><a href="<?php print $front_page;?>">TERMS OF SERVICE</a></li>
-                  <li><a href="<?php print $front_page;?>">CONTACT</a></li>
-                </ul>
-              </div>
             </div>
 
             <div class="footer-2-copy-cont clearfix">
