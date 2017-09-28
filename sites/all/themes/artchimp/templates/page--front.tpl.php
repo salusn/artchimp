@@ -1,5 +1,6 @@
 
 <?php global $base_url;
+//Jikku
 $path_to_theme = $base_url . '/' . drupal_get_path('theme', 'artchimp');?>
 
 
