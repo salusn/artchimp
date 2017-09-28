@@ -10,7 +10,7 @@ $firstname = $value['title'] . ' ' . $value['field_lastname'];
 
 	?>
     <h3><?php echo $firstname; ?></h3>
-    <span>VP ENGINEERING</span>
+    <span>Artist</span>
 </div>
 <?php }?>
 <?php endif;?>
