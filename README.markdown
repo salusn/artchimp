@@ -6,3 +6,8 @@ Drupal implementation of ArtChimp
 
 - Bootstrap
 - Tachyons
+
+## Languages
+
+- JS
+- PHP
