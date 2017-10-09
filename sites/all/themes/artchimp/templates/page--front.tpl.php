@@ -19,17 +19,30 @@ $path_to_theme = $base_url . '/' . drupal_get_path('theme', 'artchimp');?>
     <div class="logo-container-2">
         <div class="logo-2">
 
-        <?php if ($logo): ?>
-          <a href="<?php print $front_page;?>" title="<?php print t('Home');?>" rel="home" id="logo" class="clearfix">
-            <img src="<?php print $logo;?>"  class="logo-img" alt="<?php print t('Home');?>" />
+        <?php if ($logo) : ?>
+          <a
+            href="<?php print $front_page;?>"
+            title="<?php print t('Home');?>"
+            rel="home"
+            id="logo"
+            class="clearfix">
+            <img
+              src="<?php print $logo;?>"
+              class="logo-img"
+              alt="<?php print t('Home');?>"
+              />
           </a>
-        <?php endif;?>
+        <?php endif; ?>
 
         </div>
       </div>
     <!-- BUTTON -->
     <div class="menu-btn-respons-container">
-      <button type="button" class="navbar-toggle btn-navbar collapsed" data-toggle="collapse" data-target="#main-menu .navbar-collapse">
+      <button
+        type="button"
+        class="navbar-toggle btn-navbar collapsed"
+        data-toggle="collapse"
+        data-target="#main-menu .navbar-collapse">
         <span aria-hidden="true" class="icon_menu hamb-mob-icon"></span>
       </button>
     </div>
@@ -48,9 +61,15 @@ $path_to_theme = $base_url . '/' . drupal_get_path('theme', 'artchimp');?>
           <!-- MAIN MENU LIST -->
           <nav class="collapse collapsing navbar-collapse right-1024">
 
-             <?php
-print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('class' => array('nav', 'navbar-nav'))));
-?>
+                <?php
+                  print theme(
+                      'links__system_main_menu',
+                      array(
+                        'links' => $main_menu,
+                        'attributes' => array('class' => array('nav', 'navbar-nav'))
+                      )
+                  );
+                ?>
 
           </nav>
           </div>
@@ -88,7 +107,7 @@ print theme('links__system_main_menu', array('links' => $main_menu, 'attributes'
 </div>
 
 
- <?php print render($page['content_front']);?>
+    <?php print render($page['content_front']); ?>
 
         <!-- SHOP INFO 1 -->
         <div class="shop-info grey-dark-bg font-white pt-110-b-80-cont">
@@ -149,7 +168,7 @@ print theme('links__system_main_menu', array('links' => $main_menu, 'attributes'
                   1-800-310-1010
                 </div> -->
                 <div class="footer-2-text-cont">
-                  <a class="a-text" href="mailto:info@adidas.com">info@artchimp.com</a>
+                  <a class="a-text" href="mailto:info@artchimp.com">info@artchimp.com</a>
                 </div>
               </div>
             </div>
