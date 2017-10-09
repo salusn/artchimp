@@ -115,7 +115,7 @@
           <!-- Copyright -->
           <div class="left">
             <a class="footer-2-copy" href="http://www.artchimp.com/" target="_blank">
-                    &copy; ARTCHIMP 2018
+                    &copy; ARTCHIMP 2017
                   </a>
           </div>
         </div>
