@@ -1,12 +1,8 @@
-
+// Jikku
 <?php global $base_url;
-//Jikku
 $path_to_theme = $base_url . '/' . drupal_get_path('theme', 'artchimp');?>
-
-
 <div id="wrap" class="boxed ">
   <div class="grey-bg">
-
 
 <!-- HEADER 1 NO-TRANSPARENT -->
 <header id="nav" class="header header-1 no-transparent mobile-no-transparent">
@@ -91,24 +87,17 @@ $path_to_theme = $base_url . '/' . drupal_get_path('theme', 'artchimp');?>
 
 <div class="homepage-hero-module">
     <div class="video-container">
-
         <div class="container sm-content-cont text-center title-container">
             <div class="sm-cont-middle">
-
-
             </div>
           </div>
-
     </div>
 </div>
 
 <div class="container">
-
 </div>
 
-
     <?php print render($page['content_front']); ?>
-
         <!-- SHOP INFO 1 -->
         <div class="shop-info grey-dark-bg font-white pt-110-b-80-cont">
           <div class="container">
@@ -120,10 +109,7 @@ $path_to_theme = $base_url . '/' . drupal_get_path('theme', 'artchimp');?>
         <div class="page-section p-110-cont">
           <div class="container">
             <div class="row client-row border-bot">
-
-
             </div>
-
           </div>
         </div>
 
@@ -150,31 +136,24 @@ $path_to_theme = $base_url . '/' . drupal_get_path('theme', 'artchimp');?>
         <footer class="page-section pt-80 pb-50 footer2-black">
           <div class="container">
             <div class="row">
-
               <div class="col-md-3 col-sm-3 widget">
                 <div class="logo-footer-cont">
                   <a href="<?php print $front_page;?>">
                     <img class="logo-footer" src="<?php echo $path_to_theme; ?>/images/logo.png" alt="logo">
                   </a>
                 </div>
-               <!--  <div class="footer-2-text-cont">
-                  <address>
-                    555 California str, Suite 100<br>
-                    San&nbsp;Francisco, CA 94107
-                  </address>
-                </div> -->
-                <!-- <div class="footer-2-text-cont">
-                  1-800-312-2121<br>
-                  1-800-310-1010
-                </div> -->
                 <div class="footer-2-text-cont">
-                  <a class="a-text" href="mailto:info@artchimp.com">info@artchimp.com</a>
+                  <a
+                    class="a-text"
+                    href="mailto:info@artchimp.com">
+                      info@artchimp.com
+                    </a>
                 </div>
               </div>
             </div>
 
+            <!-- Social Links -->
             <div class="footer-2-copy-cont clearfix">
-              <!-- Social Links -->
               <div class="footer-2-soc-a right">
                 <a
                   href=""
@@ -198,21 +177,20 @@ $path_to_theme = $base_url . '/' . drupal_get_path('theme', 'artchimp');?>
 
               <!-- Copyright -->
               <div class="left">
-                <a class="footer-2-copy" href="http://www.adidas.co.in/" target="_blank">&copy; ARTCHIMP 2016</a>
+                <a
+                  class="footer-2-copy"
+                  href="http://www.artchimp.com/"
+                  target="_blank">
+                    &copy; ARTCHIMP 2017
+                  </a>
               </div>
-
-
             </div>
-
           </div>
         </footer>
 
-        <!-- BACK TO TOP -->
-        <p id="back-top">
-          <a href="#top" title="Back to Top"><span class="icon icon-arrows-up"></span></a>
-        </p>
-
-
+  <!-- BACK TO TOP -->
+  <p id="back-top">
+    <a href="#top" title="Back to Top"><span class="icon icon-arrows-up"></span></a>
+  </p>
 </div>
 </div>
-
