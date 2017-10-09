@@ -176,11 +176,24 @@ $path_to_theme = $base_url . '/' . drupal_get_path('theme', 'artchimp');?>
             <div class="footer-2-copy-cont clearfix">
               <!-- Social Links -->
               <div class="footer-2-soc-a right">
-                <a href="http://themeforest.net/user/abcgomel/portfolio?ref=abcgomel" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
-                <a href="http://themeforest.net/user/abcgomel/portfolio?ref=abcgomel" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
-                <a href="http://themeforest.net/user/abcgomel/portfolio?ref=abcgomel" title="Behance" target="_blank"><i class="fa fa-behance"></i></a>
-                <a href="http://themeforest.net/user/abcgomel/portfolio?ref=abcgomel" title="LinkedIn+" target="_blank"><i class="fa fa-linkedin"></i></a>
-                <a href="http://themeforest.net/user/abcgomel/portfolio?ref=abcgomel" title="Dribbble" target="_blank"><i class="fa fa-dribbble"></i></a>
+                <a
+                  href=""
+                  title="Facebook"
+                  target="_blank">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                <a
+                  href=""
+                  title="Twitter"
+                  target="_blank">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                <a
+                  href=""
+                  title="LinkedIn"
+                  target="_blank">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
               </div>
 
               <!-- Copyright -->
