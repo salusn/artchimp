@@ -10,4 +10,4 @@ Drupal implementation of ArtChimp
 ## Languages
 
 - JS
-- PHP
+- PHP 7.0
