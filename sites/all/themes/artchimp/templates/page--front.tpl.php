@@ -133,24 +133,8 @@ $path_to_theme = $base_url . '/' . drupal_get_path('theme', 'artchimp');?>
 
 
         <!-- FOOTER 2 BLACK -->
-        <footer class="page-section pt-80 pb-50 footer2-black">
+        <footer class="page-section pb-20 footer2-black">
           <div class="container">
-            <div class="row">
-              <div class="col-md-3 col-sm-3 widget">
-                <div class="logo-footer-cont">
-                  <a href="<?php print $front_page;?>">
-                    <img class="logo-footer" src="<?php echo $path_to_theme; ?>/images/logo.png" alt="logo">
-                  </a>
-                </div>
-                <div class="footer-2-text-cont">
-                  <a
-                    class="a-text"
-                    href="mailto:info@artchimp.com">
-                      info@artchimp.com
-                    </a>
-                </div>
-              </div>
-            </div>
 
             <!-- Social Links -->
             <div class="footer-2-copy-cont clearfix">
