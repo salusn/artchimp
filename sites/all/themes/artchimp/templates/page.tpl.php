@@ -154,51 +154,31 @@
       </div>
     </div>
 
-
-
     <!-- FOOTER 2 BLACK -->
-    <footer class="page-section pt-80 pb-50 footer2-black">
+    <footer class="page-section pb-20 footer2-black">
       <div class="container">
-        <div class="row">
 
-          <div class="col-md-3 col-sm-3 widget">
-            <div class="logo-footer-cont">
-              <a href="<?php print $front_page;?>">
-                    <img class="logo-footer" src="<?php echo $path_to_theme; ?>/images/logo.png" alt="logo">
-                  </a>
-            </div>
-            <!-- <div class="footer-2-text-cont">
-                  <address>
-                    555 California str, Suite 100<br>
-                    San&nbsp;Francisco, CA 94107
-                  </address>
-                </div> -->
-            <!-- <div class="footer-2-text-cont">
-                  1-800-312-2121<br>
-                  1-800-310-1010
-                </div> -->
-            <div class="footer-2-text-cont">
-              <a class="a-text" href="mailto:info@adidas.com">info@artchimp.com</a>
-            </div>
-          </div>
-        </div>
-
+        <!-- Social Links -->
         <div class="footer-2-copy-cont clearfix">
-          <!-- Social Links -->
           <div class="footer-2-soc-a right">
-            <a href="" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
-            <a href="" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
-            <a href="" title="LinkedIn+" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="" title="Facebook" target="_blank">
+              <i class="fa fa-facebook"></i>
+            </a>
+            <a href="" title="Twitter" target="_blank">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a href="" title="LinkedIn" target="_blank">
+              <i class="fa fa-linkedin"></i>
+            </a>
           </div>
 
           <!-- Copyright -->
           <div class="left">
-            <a class="footer-2-copy" href="http://www.qucentis.com/" target="_blank">&copy; ARTCHIMP 2017</a>
+            <a class="footer-2-copy" href="http://www.artchimp.com/" target="_blank">
+                    &copy; ARTCHIMP 2017
+                  </a>
           </div>
-
-
         </div>
-
       </div>
     </footer>
 
@@ -206,7 +186,5 @@
     <p id="back-top">
       <a href="#top" title="Back to Top"><span class="icon icon-arrows-up"></span></a>
     </p>
-
-
   </div>
 </div>
