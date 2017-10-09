@@ -1,16 +1,18 @@
-<?php if ($rows): ?>
-<?php foreach ($view->style_plugin->rendered_fields as $key => $value) {
-	//print_r($value);exit;?>
+<?php if ($rows) : ?>
+<?php foreach ($view
+    ->style_plugin->rendered_fields as $key => $value) {
+?>
 <div class="member col-md-3 col-sm-3">
     <div class="member-image">
-      <?php echo $value['field_photo'] ?>
+        <?php echo $value['field_photo'] ?>
     </div>
     <?php
-$firstname = $value['title'] . ' ' . $value['field_lastname'];
-
-	?>
+    $firstname = $value['title'] . ' ' . $value['field_lastname'];
+?>
     <h3><?php echo $firstname; ?></h3>
-    <span>Painter</span>
+    <span>Artist</span>
 </div>
-<?php }?>
-<?php endif;?>
+<?php
+} ?>
+<?php
+endif; ?>
