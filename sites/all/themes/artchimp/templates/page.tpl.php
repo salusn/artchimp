@@ -1,4 +1,4 @@
-<?php global $base_url; $path_to_theme=$ base_url . '/' . drupal_get_path( 'theme', 'artchimp');?>
+<?php global $base_url; $path_to_theme=$base_url . '/' . drupal_get_path( 'theme', 'artchimp');?>
 <!-- Jikku -->
 
 <div id="wrap" class="boxed ">
