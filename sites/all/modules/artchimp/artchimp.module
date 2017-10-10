@@ -18,17 +18,35 @@ function artchimp_menu() {
 }
 
 function artchimp_form_alter(&$form, &$form_state, $form_id) {
-
+//print_r($form_id);exit;
   global $user;
     switch ($form_id) {
       case "exhibition_node_form";
-      //print_r($form);exit;
-       // $form['#submit'][] = 'light_misc_login_form_submit';
       $form['field_exhibition_hidden']['#access'] = 0;
       break;
+      case "artist_node_form":
+      if(arg(2) == "edit") {
+        $form['#submit'][] = 'artchimp_editsubmit';
+               
+      }
+      
      } 
 }
 
+function artchimp_editsubmit($form, &$form_state){
+ 
+  $usr = node_load(arg(1));
+  if($usr->type == "artist") {
+  $name = $usr->title.' '.$usr->field_lastname['und']['0']['value'];
+  $n = url('content/'.$usr->title);
+  drupal_set_message(t('The profile of <a href="@link" target="_blank">%name</a>.',array('@link'=>$n,
+  '%name'=>$name)));
+  }
+  
+  drupal_goto('node/'.arg(1).'/edit');
+ 
+  //print_r($form_state['redirect']);exit;
+}
 
 function artists_work_form() {
   
