@@ -32,6 +32,7 @@ stylesheets[all][] = css/style.css
 stylesheets[all][] = css/animate.min.css
 stylesheets[all][] = css/style-more.css
 stylesheets[all][] = css/tachyons.min.css
+stylesheets[all][] = css/fonts.css
 
 
 scripts[] = js/bootstrap.min.js
