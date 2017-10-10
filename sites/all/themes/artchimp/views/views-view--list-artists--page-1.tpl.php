@@ -5,12 +5,7 @@
     <div class="member-image">
         <?php echo $value['field_photo'] ?>
     </div>
-    <?php
-$firstname = $value['title'] . ' ' . $value['field_lastname'];
-	?>
-
     <div class="f2 b mt4"><?php echo $value['nothing']; ?></div>
 </div>
-<?php
-}?>
+<?php }?>
 <?php endif;?>
