@@ -9,8 +9,7 @@
     <?php
     $firstname = $value['title'] . ' ' . $value['field_lastname'];
 ?>
-    <h3><?php echo $firstname; ?></h3>
-    <span>Artist</span>
+    <h2><?php echo $firstname; ?></h2>
 </div>
 <?php
 } ?>
