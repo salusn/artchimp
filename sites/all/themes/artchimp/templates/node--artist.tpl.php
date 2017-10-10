@@ -5,30 +5,14 @@
         <?php if ($page) : ?>
 
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-4">
           <div class="post-img">
-            <?php print render($content[ 'field_photo']);?>
+            <?php print render($content['field_photo']);?>
           </div>
         </div>
-        <div class="col-md-9">
-          <div class="post-prev-info">
-            <div class="field field-label-inline clearfix">
-              <div class="field-label">Name:&nbsp;</div>
-              <div class="field-items">
-                <?php print $node->title . ' ';?>
-                <?php if (isset($node->field_lastname['und'])) : ?>
-                <?php print $node->field_lastname['und'][0]['value'];?>
-                <?php endif;?>
-              </div>
-            </div>
-
-            <?php print render($content[ 'field_date_of_birth']);?>
-            <?php print render($content[ 'field_location']);?>
-            <?php print render($content[ 'field_website']);?>
-
-          </div>
+        <div class="col-md-8">
           <div class="post-text">
-            <?php print render($content[ 'body']);?>
+            <?php print render($content['body']);?>
           </div>
         </div>
       </div>
