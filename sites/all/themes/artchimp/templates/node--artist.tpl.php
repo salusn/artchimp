@@ -30,18 +30,20 @@
 
         <?php endif;?>
 
-        <?php //if (!$page): ?>
+        <?php if (!$page): ?>
 
-      <!-- <div class="post-prev-img">VP ENGINEERING
-        <?php //print render($content['field_photo']);?>
-    </div> -->
+     <div class="post-prev-img">
+        <?php print render($content['field_photo']);?>
+    </div>
+  <?php
+$name = $node->title . ' ' . $node->field_lastname['und']['0']['value']
 
+?>
+      <div class="post-prev-title mb-5">
+    <h3<?php print $title_attributes;?>><a href="<?php echo url('node/' . $node->nid . '/edit') ?>"><?php print $name;?></a></h3>
+    </div>
 
-      <!-- <div class="post-prev-title mb-5">
-    <h3<?php //print $title_attributes;?>><a href="<?php //print $node_url;?>"><?php //print $title;?></a></h3>
-    </div> -->
-
-        <?php //endif ;?>
+        <?php endif;?>
 
     </div>
   </div>
