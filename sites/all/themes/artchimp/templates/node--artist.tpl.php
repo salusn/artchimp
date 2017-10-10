@@ -1,8 +1,9 @@
+<?php // // Jikku Jose : Artist details page.Artist listing page is views-view--list-artists--page-1.tpl.php(You already added changes here.)?>
 <div id="node-<?php print $node->nid;?>" class="<?php print $classes;?> clearfix" <?php print $attributes;?>>
   <div class="content" <?php print $content_attributes;?>>
     <div class="blog-post">
 
-        <?php if ($page) : ?>
+        <?php if ($page): ?>
 
       <div class="row">
         <div class="col-md-4">
@@ -27,7 +28,7 @@
         <?php print views_embed_view('list_works', 'block_1');?>
 
 
-        <?php endif; ?>
+        <?php endif;?>
 
         <?php //if (!$page): ?>
 
