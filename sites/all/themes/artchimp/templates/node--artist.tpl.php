@@ -13,7 +13,7 @@
         <div class="col-md-9">
           <div class="post-prev-info">
             <div class="field field-label-inline clearfix">
-              <div class="field-label">Full Name:&nbsp;</div>
+              <div class="field-label">Name:&nbsp;</div>
               <div class="field-items">
                 <?php print $node->title . ' ';?>
                 <?php if (isset($node->field_lastname['und'])) : ?>
