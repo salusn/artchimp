@@ -1,4 +1,5 @@
-<?php global $base_url; $path_to_theme=$base_url . '/' . drupal_get_path( 'theme', 'artchimp');?>
+<?php global $base_url;
+$path_to_theme = $base_url . '/' . drupal_get_path('theme', 'artchimp');?>
 <!-- Jikku | done -->
 
 <div id="wrap" class="boxed ">
@@ -44,7 +45,7 @@
                 <!-- MAIN MENU LIST -->
                 <nav class="collapse collapsing navbar-collapse right-1024">
 
-                  <?php print theme( 'links__system_main_menu', array( 'links'=> $main_menu, 'attributes' => array('class' => array('nav', 'navbar-nav')))); ?>
+                  <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('class' => array('nav', 'navbar-nav'))));?>
 
                 </nav>
               </div>
@@ -86,11 +87,11 @@
 
           <div class="col-md-4">
 
-            <?php if ($breadcrumb) : ?>
+            <?php if ($breadcrumb): ?>
             <div class="breadcrumbs">
                 <?php print $breadcrumb;?>
             </div>
-            <?php endif; ?>
+            <?php endif;?>
 
           </div>
 
@@ -98,7 +99,7 @@
       </div>
     </div>
 
-    <?php if ($messages) : ?>
+    <?php if ($messages): ?>
       <div class="page-section pt-80">
         <div class="container">
             <?php print $messages;?>
@@ -109,24 +110,24 @@
     <div class="page-section p-80-cont">
       <div class="container">
         <div class="row">
-            <?php if ($page['sidebar_first']) : ?>
+            <?php if ($page['sidebar_first']): ?>
               <div id="sidebar-second" class="col-sm-4 col-md-3">
-                <?php print render($page[ 'sidebar_first']);?>
+                <?php print render($page['sidebar_first']);?>
               </div>
               <div id="main-content" class="col-sm-8">
-                <?php print render($page[ 'content']);?>
+                <?php print render($page['content']);?>
               </div>
-            <?php else : ?>
-            <?php print render($page[ 'content']); ?>
-            <?php endif; ?>
+            <?php else: ?>
+            <?php print render($page['content']);?>
+            <?php endif;?>
         </div>
       </div>
     </div>
 
-    <?php if ($page[ 'content_footer']) : ?>
+    <?php if ($page['content_footer']): ?>
       <hr class="mt-0 mb-80">
       <div class="container">
-        <?php print render($page[ 'content_footer']);?>
+        <?php print render($page['content_footer']);?>
       </div>
     <?php endif;?>
 
