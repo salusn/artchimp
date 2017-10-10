@@ -1,3 +1,4 @@
+<?php // Jikku Jose : Exhibition detail page and details page ?>
 <div id="node-<?php print $node->nid;?>" class="<?php print $classes;?> clearfix"<?php print $attributes;?>>
 
   <div class="content"<?php print $content_attributes;?>>
@@ -6,7 +7,7 @@
         <div class="<?php echo ($page) ? "post-img" : "post-prev-img"; ?>">
          <?php print render($content['field_photo']);?>
        </div>
-      <?php //exhibition listing?>
+      <?php //NB:exhibition listing?>
        <?php print render($title_prefix);?>
        <?php if (!$page): ?>
          <div class="post-prev-title mb-5">
@@ -17,7 +18,7 @@
        <?php endif;?>
         <?php //end exhibition listing?>
 
-         <?php //exhibition detail?>
+         <?php //NB:exhibition detail?>
        <?php print render($title_suffix);?>
        <div class="shop-price-cont">
          <?php echo render($content['field_location_new']); ?>
