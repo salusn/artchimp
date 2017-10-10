@@ -1,0 +1,21 @@
+/* Config
+ *
+ * theme_colour: #973131;
+ * background: #FFFAF0;
+*/
+
+.tarq-bg-red {
+  background: #973131;
+}
+
+.tarq-red {
+  color: #973131;
+}
+
+.tarq-white {
+  color: #FFFAF0;
+}
+
+.tarq-bg-white {
+  background: #FFFAF0;
+}
