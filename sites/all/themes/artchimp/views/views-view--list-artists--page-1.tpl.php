@@ -9,7 +9,7 @@
     <?php
     $firstname = $value['title'] . ' ' . $value['field_lastname'];
 ?>
-    <div class="f1 b mt4"><?php echo $firstname; ?></div>
+    <div class="f2 b mt4"><?php echo $firstname; ?></div>
 </div>
 <?php
 } ?>
