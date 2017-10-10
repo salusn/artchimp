@@ -1,6 +1,5 @@
 <?php if ($rows): ?>
-<?php foreach ($view
-	->style_plugin->rendered_fields as $key => $value) {
+<?php foreach ($view->style_plugin->rendered_fields as $key => $value) {
 	?>
 <div class="member col-md-4 col-sm-3">
     <div class="member-image">
@@ -14,5 +13,4 @@ $firstname = $value['title'] . ' ' . $value['field_lastname'];
 </div>
 <?php
 }?>
-<?php
-endif;?>
+<?php endif;?>
