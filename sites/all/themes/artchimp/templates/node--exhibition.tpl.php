@@ -21,7 +21,6 @@
          <?php //NB:exhibition detail?>
        <?php print render($title_suffix);?>
        <div class="shop-price-cont">
-         <?php print $title?>
          <?php echo render($content['field_location_new']); ?>
        </div>
 <?php
