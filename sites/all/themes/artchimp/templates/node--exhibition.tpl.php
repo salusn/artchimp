@@ -28,7 +28,7 @@ $startDate = date("d F", strtotime($node->field_exhibition_date['und']['0']['val
 $endDate = date("d F Y", strtotime($node->field_exhibition_date['und']['0']['value2']));
 ?>
        <div class="post-prev-more-cont clearfix">
-   	 <?php echo $startDate ?> - <?php echo $endDate; ?>
+   	 <?php echo $startDate ?> — <?php echo $endDate; ?>
        </div>
         <div class="post-prev-info">
           <?php
