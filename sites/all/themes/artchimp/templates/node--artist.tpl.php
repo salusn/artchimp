@@ -24,7 +24,7 @@
         <?php print views_embed_view('list_exhibitions', 'block_1');?>
 
       <hr class="mt-0 mb-20">
-      <h3>Works</h3>
+      <h3>Artworks</h3>
         <?php print views_embed_view('list_works', 'block_1');?>
 
 
