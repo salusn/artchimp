@@ -3001,9 +3001,13 @@ table.shopping-cart-table tr td {
   background-repeat: no-repeat;
   background-position: center center;
 }
-.page-title-small {
+/*.page-title-small {
   padding-top: 118px;
   padding-bottom: 58px;
+}*/
+.page-title-small {
+  padding-top: 70px;
+  padding-bottom: 9px;
 }
 .page-title-small .page-title {
   margin-top: 40px;
