@@ -12,6 +12,7 @@
        <?php if (!$page): ?>
          <div class="post-prev-title mb-5">
          <h3<?php print $title_attributes;?>>
+         <h3<?php print $title_attributes;?>>
          <a href="<?php print $node_url;?>"><?php print $title;?></a>
          </h3>
        </div>
@@ -20,9 +21,9 @@
 
          <?php //NB:exhibition detail?>
        <?php print render($title_suffix);?>
-       <div class="shop-price-cont">
-         <?php echo render($content['field_location_new']); ?>
-       </div>
+      <!--  <div class="shop-price-cont">
+         <?php //echo render($content['field_location_new']); ?>
+       </div> -->
 <?php
 $startDate = date("d F", strtotime($node->field_exhibition_date['und']['0']['value']));
 $endDate = date("d F Y", strtotime($node->field_exhibition_date['und']['0']['value2']));

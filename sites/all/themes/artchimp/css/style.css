@@ -10851,3 +10851,6 @@ ul#flickr-sfeeds li a img {
 }
 
 /* #MAGAZINE NEW ***************************************************/
+.img-responsive-front {
+  width: 100% !important
+}

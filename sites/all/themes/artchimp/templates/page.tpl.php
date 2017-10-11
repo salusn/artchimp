@@ -110,7 +110,7 @@ $path_to_theme = $base_url . '/' . drupal_get_path('theme', 'artchimp');?>
     <div class="page-section p-80-cont">
       <div class="container">
         <div class="row mt3">
-        <div class="f2 mb4"><?php print $title;?></div>
+        <div class="tarq-page-title"><?php print $title;?></div>
             <?php if ($page['sidebar_first']): ?>
               <div id="sidebar-second" class="col-sm-4 col-md-3">
                 <?php print render($page['sidebar_first']);?>
