@@ -4,15 +4,16 @@
      <?php global $user;?>
   <div class="blog-post">
         <div class="<?php echo ($page) ? "post-img" : "mb3"; ?>">
-
-         <?php print render($content['field_photo']);?>
+         <?php if (isset($user->roles[4])) {?>
+         <a href="<?php echo url('node/' . $node->nid . '/edit') ?>"><?php print render($content['field_photo']);?></a><?php } else {?>
+         <a href="<?php echo url('node/' . $node->nid) ?>"><?php print render($content['field_photo']);?><?php }?></a>
        </div>
 
        <?php print render($title_prefix);?>
 
        <?php if (!$page): ?>
          <div class="post-prev-title mb-5">
-         <?php if ($user->roles[4]) {?>
+         <?php if (isset($user->roles[4])) {?>
           <h3<?php print $title_attributes;?>><a href="<?php echo url('node/' . $node->nid . '/edit') ?>"><?php print $title;?></a></h3>
           <?php } else {?>
          <h3<?php print $title_attributes;?>><a href="<?php print $node_url;?>"><?php print $title;?></a></h3><?php }?>
