@@ -11,7 +11,6 @@
     <?php echo $value['field_date'] ?>
     </div>
     <div class="f2 b mt4"><?php echo $value['title']; ?></div>
-    <div class="f2 b mt4"><?php echo $value['title']; ?></div>
 </div>
 <?php
 }?>
