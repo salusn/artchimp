@@ -18,7 +18,7 @@ function artchimp_menu() {
 }
 
 function artchimp_form_alter(&$form, &$form_state, $form_id) {
-//print_r($form_id);exit;
+  //print_r($form_id);exit;
   global $user;
     switch ($form_id) {
       case "exhibition_node_form";
@@ -41,7 +41,12 @@ function artchimp_form_alter(&$form, &$form_state, $form_id) {
       if(arg(2) == "edit") {
         $form['#submit'][] = 'artchimp_blogeditsubmit';               
       }
-      break;      
+      break;
+      case "publication_node_form":
+      if(arg(2) == "edit") {
+        $form['#submit'][] = 'artchimp_publicationeditsubmit';               
+      }
+      break;       
      } 
 }
 
@@ -69,6 +74,7 @@ function artchimp_exhibitioneditsubmit($form, &$form_state){
   drupal_goto('node/'.arg(1).'/edit');
  
 }
+
 function artchimp_workeditsubmit($form, &$form_state){
  
   $node_artwork = node_load(arg(1));
@@ -81,6 +87,7 @@ function artchimp_workeditsubmit($form, &$form_state){
   drupal_goto('node/'.arg(1).'/edit');
  
 }
+
 function artchimp_blogeditsubmit($form, &$form_state){
  
   $node_blog = node_load(arg(1));
@@ -92,6 +99,18 @@ function artchimp_blogeditsubmit($form, &$form_state){
   }  
   drupal_goto('node/'.arg(1).'/edit');
  
+}
+
+function artchimp_publicationeditsubmit($form, &$form_state){
+ 
+  $node_publication = node_load(arg(1));
+  if($node_publication->type == "publication") {
+   $title = $node_publication->title;
+   $link = url('node/'.$node_publication->nid);
+   drupal_set_message(t('The publication: <a href="@link" target="_blank">%name </a> was updated.',array('@link'=>$link,
+   '%name'=>$title)));
+  }  
+  drupal_goto('node/'.arg(1).'/edit'); 
 }
 
 function artists_work_form() {
