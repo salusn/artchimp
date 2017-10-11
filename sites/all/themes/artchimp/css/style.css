@@ -10854,3 +10854,6 @@ ul#flickr-sfeeds li a img {
 .img-responsive-front {
   width: 100% !important
 }
+.home-container {
+  margin-top: 120px;
+}

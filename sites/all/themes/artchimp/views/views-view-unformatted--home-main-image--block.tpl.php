@@ -7,7 +7,8 @@
 		</div>
 		<div class="col-md-4">
 			<h1><?php print $value['title']?></h1>
-			<p><?php print $value['field_exhibition_date']?></p>
+			<small><?php print $value['field_exhibition_date']?></small>
+			<br>
 			<?php print $value['body']?>
 			<p><?php print $value['field_location_new']?></p>
 		</div>
