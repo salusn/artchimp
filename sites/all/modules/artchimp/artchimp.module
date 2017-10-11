@@ -24,7 +24,7 @@ function artchimp_form_alter(&$form, &$form_state, $form_id) {
       case "exhibition_node_form";
       $form['field_exhibition_hidden']['#access'] = 0;
       if(arg(2) == "edit") {
-        $form['#submit'][] = 'artchimp_exhibitioneditsubmit';               
+        $form['actions']['submit']['#submit'][] = 'artchimp_exhibitioneditsubmit';              
       }
       break;
       case "artist_node_form":
@@ -34,17 +34,18 @@ function artchimp_form_alter(&$form, &$form_state, $form_id) {
       break;
       case "work_node_form":
       if(arg(2) == "edit") {
-        $form['#submit'][] = 'artchimp_workeditsubmit';               
+        $form['actions']['submit']['#submit'][] = 'artchimp_workeditsubmit';             
       }
       break;
       case "blog_node_form":
       if(arg(2) == "edit") {
-        $form['#submit'][] = 'artchimp_blogeditsubmit';               
+        $form['actions']['submit']['#submit'][] = 'artchimp_blogeditsubmit';
+              
       }
       break;
       case "publication_node_form":
       if(arg(2) == "edit") {
-        $form['#submit'][] = 'artchimp_publicationeditsubmit';               
+        $form['actions']['submit']['#submit'][] = 'artchimp_publicationeditsubmit';              
       }
       break;       
      } 
