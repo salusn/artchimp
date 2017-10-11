@@ -77,27 +77,27 @@ $path_to_theme = $base_url . '/' . drupal_get_path('theme', 'artchimp');?>
 
 
     <!-- PAGE TITLE SMALL -->
-    <div class="page-title-cont page-title-small grey-light-bg">
+   <!--  <div class="page-title-cont page-title-small grey-light-bg">
       <div class="relative container align-left">
         <div class="row">
 
           <div class="col-md-8">
-            <h1 class="page-title"><?php print $title;?></h1>
+            <h1 class="page-title"><?php //print $title;?></h1>
           </div>
 
           <div class="col-md-4">
 
-            <?php if ($breadcrumb): ?>
+            <?php //if ($breadcrumb): ?>
             <div class="breadcrumbs">
-                <?php print $breadcrumb;?>
+                <?php //print $breadcrumb;?>
             </div>
-            <?php endif;?>
+            <?php //endif;?>
 
           </div>
 
         </div>
       </div>
-    </div>
+    </div> -->
 
     <?php if ($messages): ?>
       <div class="page-section pt-80">
@@ -109,7 +109,8 @@ $path_to_theme = $base_url . '/' . drupal_get_path('theme', 'artchimp');?>
 
     <div class="page-section p-80-cont">
       <div class="container">
-        <div class="row">
+        <div class="row mt3">
+        <div class="f2 mb4"><?php print $title;?></div>
             <?php if ($page['sidebar_first']): ?>
               <div id="sidebar-second" class="col-sm-4 col-md-3">
                 <?php print render($page['sidebar_first']);?>
