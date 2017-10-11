@@ -3,7 +3,7 @@
   <div class="content"<?php print $content_attributes;?>>
      <?php global $user;?>
   <div class="blog-post">
-        <div class="<?php echo ($page) ? "post-img" : "post-prev-img"; ?>">
+        <div class="<?php echo ($page) ? "post-img" : "mb3"; ?>">
 
          <?php print render($content['field_photo']);?>
        </div>
