@@ -19,3 +19,9 @@
 .tarq-bg-white {
   background: #FFFAF0;
 }
+
+.tarq-page-title {
+  font-size: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
