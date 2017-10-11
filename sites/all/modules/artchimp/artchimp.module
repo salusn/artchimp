@@ -29,10 +29,13 @@ function artchimp_form_alter(&$form, &$form_state, $form_id) {
       break;
       case "artist_node_form":
       if(arg(2) == "edit") {
-        $form['#submit'][] = 'artchimp_editsubmit';
-               
+        $form['#submit'][] = 'artchimp_editsubmit';               
       }
-      
+      break;
+      case "work_node_form":
+      if(arg(2) == "edit") {
+        $form['#submit'][] = 'artchimp_workeditsubmit';               
+      }      
      } 
 }
 
@@ -53,8 +56,21 @@ function artchimp_exhibitioneditsubmit($form, &$form_state){
   $node_exhi = node_load(arg(1));
   if($node_exhi->type == "exhibition") {
    $title = $node_exhi->title;
-   $link = url('node/'.arg(1));
+   $link = url('node/'.$node_exhi->nid);
    drupal_set_message(t('The exhibition: <a href="@link" target="_blank">%name </a> was updated.',array('@link'=>$link,
+   '%name'=>$title)));
+  }  
+  drupal_goto('node/'.arg(1).'/edit');
+ 
+}
+function artchimp_workeditsubmit($form, &$form_state){
+ 
+  $node_artwork = node_load(arg(1));
+  //print_r($node_artwork->type);exit;
+  if($node_artwork->type == "work") {
+   $title = $node_artwork->title;
+   $link = url('node/'.$node_artwork->nid);
+   drupal_set_message(t('The work: <a href="@link" target="_blank">%name </a> was updated.',array('@link'=>$link,
    '%name'=>$title)));
   }  
   drupal_goto('node/'.arg(1).'/edit');
