@@ -33,14 +33,18 @@
         <?php if (!$page): ?>
 
      <div class="post-prev-img">
-        <?php print render($content['field_photo']);?>
+     <?php if (isset($user->roles[4])) {?>
+      <a href="<?php echo url('node/' . $node->nid . '/edit') ?>"><?php print render($content['field_photo']);?></a><?php } else {?>
+       <a href="<?php echo url('node/' . $node->nid) ?>"><?php print render($content['field_photo']);?></a><?php }?>
     </div>
   <?php
 $name = $node->title . ' ' . $node->field_lastname['und']['0']['value']
 
 ?>
-      <div class="post-prev-title mb-5">
-    <h3<?php print $title_attributes;?>><a href="<?php echo url('node/' . $node->nid . '/edit') ?>"><?php print $name;?></a></h3>
+    <div class="post-prev-title mb-5">
+    <?php if (isset($user->roles[4])) {?>
+     <h3<?php print $title_attributes;?>><a href="<?php echo url('node/' . $node->nid . '/edit') ?>"><?php print $name;?></a></h3><?php } else {?>
+      <h3<?php print $title_attributes;?>><a href="<?php print $node_url;?>"><?php print $name;?></a></h3><?php }?>
     </div>
 
         <?php endif;?>
