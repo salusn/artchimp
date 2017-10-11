@@ -1,4 +1,5 @@
-<?php global $base_url; $path_to_theme=$base_url . '/' . drupal_get_path('theme', 'artchimp');?>
+<?php global $base_url;
+$path_to_theme = $base_url . '/' . drupal_get_path('theme', 'artchimp');?>
 <div id="wrap" class="boxed ">
   <div class="grey-bg">
 
@@ -13,7 +14,7 @@
             <div class="logo-container-2">
               <div class="logo-2">
 
-                <?php if ($logo) : ?>
+                <?php if ($logo): ?>
                 <a href="<?php print $front_page;?>" title="<?php print t('Home');?>" rel="home" id="logo" class="clearfix">
             <img
               src="<?php print $logo;?>"
@@ -21,7 +22,7 @@
               alt="<?php print t('Home');?>"
               />
           </a>
-                <?php endif; ?>
+                <?php endif;?>
 
               </div>
             </div>
@@ -46,7 +47,7 @@
                 <!-- MAIN MENU LIST -->
                 <nav class="collapse collapsing navbar-collapse right-1024">
 
-                  <?php print theme( 'links__system_main_menu', array( 'links'=> $main_menu, 'attributes' => array('class' => array('nav', 'navbar-nav')) ) ); ?>
+                  <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('class' => array('nav', 'navbar-nav'))));?>
 
                 </nav>
               </div>
@@ -66,32 +67,15 @@
 
     </header>
 
-    <div class="homepage-hero-module">
-      <div class="video-container">
-        <div class="container sm-content-cont text-center title-container">
-          <div class="sm-cont-middle">
-          </div>
-        </div>
-      </div>
-    </div>
-
     <div class="container">
-    </div>
 
-    <?php print render($page[ 'content_front']); ?>
-    <!-- SHOP INFO 1 -->
-    <div class="shop-info grey-dark-bg font-white pt-110-b-80-cont">
-      <div class="container">
 
-      </div>
-    </div>
+    <?php print render($page['content_front']);?>
 
-    <!-- CLIENTS 1  -->
-    <div class="page-section p-110-cont">
-      <div class="container">
-        <div class="row client-row border-bot">
-        </div>
-      </div>
+    <br>
+<br>
+<br>
+
     </div>
 
     <!-- FOOTER 2 BLACK -->
