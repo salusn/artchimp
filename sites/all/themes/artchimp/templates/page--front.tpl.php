@@ -67,15 +67,8 @@ $path_to_theme = $base_url . '/' . drupal_get_path('theme', 'artchimp');?>
 
     </header>
 
-    <div class="container">
-
-
-    <?php print render($page['content_front']);?>
-
-    <br>
-<br>
-<br>
-
+    <div class="container min-h-100">
+      <?= render($page['content_front']);?>
     </div>
 
     <!-- FOOTER 2 BLACK -->
