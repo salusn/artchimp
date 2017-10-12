@@ -1,9 +1,17 @@
 <?php if ($rows): ?>
   <?php foreach ($view->style_plugin->rendered_fields as $key => $value) { ?>
-    <div class="member col-md-12">
-      <div class="jikku-author"><?php echo $value['field_author']; ?></div>
-      <div class="jikku-date"><?php echo $value['field_date']; ?></div>
-      <div class="jikku-title f2 b mt4"><?php echo $value['title']; ?></div>
+    <div class="jikku-row row">
+      <div class="jikku-column col-md-12">
+        <div class="ph3">
+          <div class="jikku-title f2 b"><?php echo $value['title']; ?></div>
+          <div class="jikku-meta flex">
+            By
+            <div class="jikku-author ph2 b"><?php echo $value['field_author']; ?></div>
+            on
+            <div class="jikku-date ph2 b"><?php echo $value['field_date']; ?></div>
+          </div>
+        </div>
+      </div>
     </div>
   <?php } ?>
 <?php endif;?>
