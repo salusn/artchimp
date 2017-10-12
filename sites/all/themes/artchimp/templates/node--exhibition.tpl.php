@@ -17,23 +17,22 @@
         <?php endif;?>
         <?php print render($title_suffix);?>
         <?php
+          $start_date = date("d F", strtotime($node->field_exhibition_date['und']['0']['value']));
+          $end_date = date("d F Y", strtotime($node->field_exhibition_date['und']['0']['value2']));
+          $date_range = "$start_date — $end_date";
 
-$start_date = date("d F", strtotime($node->field_exhibition_date['und']['0']['value']));
-$end_date = date("d F Y", strtotime($node->field_exhibition_date['und']['0']['value2']));
-$date_range = "$start_date — $end_date";
-
-echo exhibition_date_markup($date_range);
-?>
+          echo "<div class='jikku-date'>$range</div>";
+        ?>
       </div>
         <?php if ($page): ?>
           <div class="jikku-delete">
             <?php
-hide($content['comments']);
-hide($content['links']);
-hide($content['body']);
-hide($content['field_artist_id']);
-print render($content);
-?>
+              hide($content['comments']);
+              hide($content['links']);
+              hide($content['body']);
+              hide($content['field_artist_id']);
+              print render($content);
+            ?>
           </div>
           <div class="post-text">
             <?php print render($content['body']);?>
