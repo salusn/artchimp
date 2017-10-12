@@ -3,43 +3,37 @@
 
   <div class="content"<?php print $content_attributes;?>>
     <div class="blog-post">
-
-        <div class="<?php echo ($page) ? "post-img" : ""; ?>">
+       <div class="<?php echo ($page) ? "post-img" : ""; ?>">
          <?php print render($content['field_photo']);?>
        </div>
-      <?php //NB:exhibition listing?>
-       <?php print render($title_prefix);?>
-       <?php if (!$page): ?>
-         <div class="post-prev-title mb-5">
-          <div class="">
-            <a href="<?php print $node_url;?>"><?php print $title;?></a>
+      <div class="jikku-meta">
+        <?php print render($title_prefix);?>
+        <?php if (!$page) : ?>
+          <div class="jikku-title">
+            <a href="<?php print $node_url;?>">
+              <?php print $title;?>
+            </a>
           </div>
-       </div>
-       <?php endif;?>
-        <?php //end exhibition listing?>
-
-         <?php //NB:exhibition detail?>
-       <?php print render($title_suffix);?>
-      <!--  <div class="shop-price-cont">
-         <?php //echo render($content['field_location_new']); ?>
-       </div> -->
-<?php
-$startDate = date("d F", strtotime($node->field_exhibition_date['und']['0']['value']));
-$endDate = date("d F Y", strtotime($node->field_exhibition_date['und']['0']['value2']));
-?>
-       <div class="post-prev-more-cont clearfix">
-   	 <?php echo $startDate ?> — <?php echo $endDate; ?>
-       </div>
-        <div class="post-prev-info">
+        <?php endif; ?>
+        <?php print render($title_suffix);?>
+        <?php
+          $startDate = date("d F", strtotime($node->field_exhibition_date['und']['0']['value']));
+          $endDate = date("d F Y", strtotime($node->field_exhibition_date['und']['0']['value2']));
+        ?>
+        <div class="jikku-date">
+         <?php echo $startDate ?> — <?php echo $endDate; ?>
+        </div>
+      </div>
+        <div class="jikku-delete">
           <?php
-// We hide the comments and links now so that we can render them later.
-// VP ENGINEERING
-hide($content['comments']);
-hide($content['links']);
-hide($content['body']);
-hide($content['field_artist_id']);
-print render($content);
-?>
+            // We hide the comments and links now so that we can render them later.
+            // VP ENGINEERING
+            hide($content['comments']);
+            hide($content['links']);
+            hide($content['body']);
+            hide($content['field_artist_id']);
+            print render($content);
+          ?>
         </div>
         <div class="post-text">
           <?php print render($content['body']);?>
