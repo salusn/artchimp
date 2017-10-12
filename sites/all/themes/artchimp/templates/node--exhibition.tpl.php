@@ -18,7 +18,7 @@
         <?php print render($title_suffix);?>
         <?php
           $start_date = $node->field_exhibition_date['und']['0']['value'];
-          $emd_date = $node->field_exhibition_date['und']['0']['value2'];
+          $end_date = $node->field_exhibition_date['und']['0']['value2'];
 
           echo "<div class='jikku-date'>" . formatted_date_range($start_date, $end_date) . "</div>";
         ?>
