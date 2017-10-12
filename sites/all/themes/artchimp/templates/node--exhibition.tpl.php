@@ -8,7 +8,7 @@
 
 <div id="node-<?php print $node->nid;?>" class="<?php print $classes;?> clearfix"<?php print $attributes;?>>
   <code>
-    <?php echo $node; ?>
+    <?php echo json_encode(get_object_vars($node)); ?>
   </code>
   <div class="content"<?php print $content_attributes;?>>
     <div class="blog-post">
