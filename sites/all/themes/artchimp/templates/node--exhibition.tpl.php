@@ -8,7 +8,7 @@
 
 <div id="node-<?php print $node->nid;?>" class="<?php print $classes;?> clearfix"<?php print $attributes;?>>
   <code>
-    <?php echo $node->field_exhibition_date; ?>
+    <?php echo $node->field_location_new['und']['0']['value']; ?>
   </code>
   <div class="content"<?php print $content_attributes;?>>
     <div class="blog-post">
