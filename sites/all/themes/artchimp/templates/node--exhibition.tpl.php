@@ -11,10 +11,9 @@
        <?php print render($title_prefix);?>
        <?php if (!$page): ?>
          <div class="post-prev-title mb-5">
-         <h3<?php print $title_attributes;?>>
-         <h3<?php print $title_attributes;?>>
-         <a href="<?php print $node_url;?>"><?php print $title;?></a>
-         </h3>
+          <div class="">
+            <a href="<?php print $node_url;?>"><?php print $title;?></a>
+          </div>
        </div>
        <?php endif;?>
         <?php //end exhibition listing?>
