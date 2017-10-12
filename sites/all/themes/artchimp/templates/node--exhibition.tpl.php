@@ -7,43 +7,40 @@
       </div>
       <div class="jikku-meta">
         <?php print render($title_prefix);?>
-        <?php if (!$page) : ?>
+        <?php if (!$page): ?>
           <div class="jikku-location">Hardcoded Location</div>
           <div class="jikku-title">
             <a href="<?php print $node_url;?>">
               <?php print $title;?>
             </a>
           </div>
-        <?php endif; ?>
+        <?php endif;?>
         <?php print render($title_suffix);?>
         <?php
-          function exhibition_date_markup($range) {
-            return "<div class='jikku-date'>$range</div>";
-          }
 
-          $start_date = date("d F", strtotime($node->field_exhibition_date['und']['0']['value']));
-          $end_date = date("d F Y", strtotime($node->field_exhibition_date['und']['0']['value2']));
-          $date_range = "$start_date — $end_date";
+$start_date = date("d F", strtotime($node->field_exhibition_date['und']['0']['value']));
+$end_date = date("d F Y", strtotime($node->field_exhibition_date['und']['0']['value2']));
+$date_range = "$start_date — $end_date";
 
-          echo exhibition_date_markup($date_range);
-        ?>
+echo exhibition_date_markup($date_range);
+?>
       </div>
-        <?php if ($page) : ?>
+        <?php if ($page): ?>
           <div class="jikku-delete">
             <?php
-              hide($content['comments']);
-              hide($content['links']);
-              hide($content['body']);
-              hide($content['field_artist_id']);
-              print render($content);
-            ?>
+hide($content['comments']);
+hide($content['links']);
+hide($content['body']);
+hide($content['field_artist_id']);
+print render($content);
+?>
           </div>
           <div class="post-text">
             <?php print render($content['body']);?>
           </div>
-        <?php if (isset($user->roles[3]) || isset($user->roles[4])) { ?>
+        <?php if (isset($user->roles[3]) || isset($user->roles[4])) {?>
           <a href="<?php echo url('settings/exhibition/' . $node->nid) ?>">Add Works</a>
-        <?php } ?>
+        <?php }?>
           <hr class="mt-0 mb-0">
            <h3>Artists</h3>
             <?php //print views_embed_view('list_exhibitions', 'block_2');?>

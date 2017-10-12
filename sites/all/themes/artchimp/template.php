@@ -12,3 +12,7 @@ function artchimp_preprocess_page(&$variables) {
 		}
 	}
 }
+
+function exhibition_date_markup($range) {
+	return "<div class='jikku-date'>$range</div>";
+}
