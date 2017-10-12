@@ -28,7 +28,7 @@
         <?php endif; ?>
 
         <?= render($title_suffix) ?>
-        <code class="jikku-debug"><?= $title_suffix ?></code>
+        <code class="jikku-debug"><?= implode(" ", $title_suffix) ?></code>
 
         <?php if ($isDetailPage) : ?>
           <div class="row mb6">
