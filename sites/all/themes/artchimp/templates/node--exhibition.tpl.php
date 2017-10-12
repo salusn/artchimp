@@ -17,14 +17,10 @@
         <?php endif;?>
         <?php print render($title_suffix);?>
         <?php
-          $one = $node->field_exhibition_date['und']['0']['value'];
-          $two = $node->field_exhibition_date['und']['0']['value2'];
+          $start_date = $node->field_exhibition_date['und']['0']['value'];
+          $emd_date = $node->field_exhibition_date['und']['0']['value2'];
 
-          $start_date = date("d F", strtotime($node->field_exhibition_date['und']['0']['value']));
-          $end_date = date("d F Y", strtotime($node->field_exhibition_date['und']['0']['value2']));
-          $date_range = "$start_date — $end_date";
-
-          echo "<div class='jikku-date'>" . formatted_date_range($one, $two) . "</div>";
+          echo "<div class='jikku-date'>" . formatted_date_range($start_date, $end_date) . "</div>";
         ?>
       </div>
         <?php if ($page): ?>
