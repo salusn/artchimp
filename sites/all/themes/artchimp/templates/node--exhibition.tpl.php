@@ -17,6 +17,13 @@
         <?php endif; ?>
         <?php print render($title_suffix);?>
         <?php
+          function hello_world($name) {
+            return "Hello World by $name";
+          }
+
+          echo hello_world('Jikku Jose')
+        ?>
+        <?php
           // function date_markup($range) {
           //   return "<div class='jikku-date'>$range</div>";
           // }
