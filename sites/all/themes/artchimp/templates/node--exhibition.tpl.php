@@ -17,7 +17,7 @@
         <?php endif; ?>
         <?php print render($title_suffix);?>
         <?php
-          function date_markup($range) {
+          function exhibition_date_markup($range) {
             return "<div class='jikku-date'>$range</div>";
           }
 
@@ -25,7 +25,7 @@
           $end_date = date("d F Y", strtotime($node->field_exhibition_date['und']['0']['value2']));
           $date_range = "$start_date — $end_date";
 
-          echo date_markup($date_range);
+          echo exhibition_date_markup($date_range);
         ?>
       </div>
         <?php if ($page) : ?>
