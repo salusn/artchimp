@@ -17,15 +17,15 @@
         <?php endif; ?>
         <?php print render($title_suffix);?>
         <?php
-          // function date_markup($range) {
-          //   return "<div class='jikku-date'>$range</div>";
-          // }
+          function date_markup($range) {
+            return "<div class='jikku-date'>$range</div>";
+          }
 
           $start_date = date("d F", strtotime($node->field_exhibition_date['und']['0']['value']));
           $end_date = date("d F Y", strtotime($node->field_exhibition_date['und']['0']['value2']));
           $date_range = "$start_date — $end_date";
 
-          echo "<div class='jikku-date'>$date_range</div>";
+          echo date_markup($date_range);
         ?>
       </div>
         <?php if ($page) : ?>
