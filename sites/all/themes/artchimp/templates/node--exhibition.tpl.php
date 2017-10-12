@@ -8,6 +8,7 @@
 ?>
 
 <div id="node-<?php print $node->nid;?>" class="<?php print $classes;?> clearfix"<?php print $attributes;?>>
+  <code><?= $page ?></code>
   <div class="content"<?php print $content_attributes;?>>
     <div class="blog-post">
         <?php print render($title_prefix);?>
@@ -36,11 +37,9 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div class="m22t4">
-                <div class="ttu black-40 b"><?php print render($content['field_location_new']);?></div>
-                <div class=""><?php print formatted_date_range($start_date, $end_date)?></div>
-                <div class=""><?php print render($content['body'])?></div>
-              </div>
+              <div class="ttu black-40 b"><?= $location ?></div>
+              <div class="mb4"><?= $date_range ?></div>
+              <div class=""><?= render($content['body'])?></div>
             </div>
           </div>
             <hr class="mt-0 mb-0">
@@ -51,7 +50,6 @@
               <?php print views_embed_view('list_works', 'block_3');?>
           </div>
         <?php endif;?>
-
     </div>
   </div>
 </div>
