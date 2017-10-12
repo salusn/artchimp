@@ -6,11 +6,12 @@
 			<a href="<?php print $value['path']?>"><img src="<?php print $value['field_photo']?>" class="img-responsive-front" /></a>
 		</div>
 		<div class="col-md-4">
-			<h1><?php print $value['title']?></h1>
-			<small><?php print $value['field_exhibition_date']?></small>
-			<br>
-			<?php print $value['body']?>
-			<p><?php print $value['field_location_new']?></p>
+      <div class="">
+        <div class=""><?php print $value['field_location_new']?></div>
+        <div class=""><?php print $value['title']?></div>
+        <div class=""><?php print $value['field_exhibition_date']?></div>
+        <div class=""><?php print $value['body']?></div>
+      </div>
 		</div>
 	<?php }?>
 	</div>
