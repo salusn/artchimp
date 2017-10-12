@@ -4,11 +4,11 @@
       $photo = $value['field_photo'];
       $name = $value['nothing'];
     ?>
-      <div class="col-md-4 col-sm-3">
+      <div class="col-md-4 col-sm-3 mb5">
           <div class="member-image">
               <?= $photo ?>
           </div>
-          <div class="f2 b mt2 mb4"><?= $name ?></div>
+          <div class="f2 b mv3"><?= $name ?></div>
       </div>
 		<?php }?>
 	</div>
