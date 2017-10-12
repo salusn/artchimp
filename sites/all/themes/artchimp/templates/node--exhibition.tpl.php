@@ -4,7 +4,7 @@
   <div class="content"<?php print $content_attributes;?>>
     <div class="blog-post">
 
-        <div class="<?php echo ($page) ? "post-img" : "post-prev-img"; ?>">
+        <div class="<?php echo ($page) ? "post-img" : ""; ?>">
          <?php print render($content['field_photo']);?>
        </div>
       <?php //NB:exhibition listing?>
