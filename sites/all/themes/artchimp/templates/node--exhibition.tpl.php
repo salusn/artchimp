@@ -8,7 +8,7 @@
 
 <div id="node-<?php print $node->nid;?>" class="<?php print $classes;?> clearfix"<?php print $attributes;?>>
   <code>
-    <?php echo json_encode(get_object_vars($node)); ?>
+    <?php echo json_encode(get_object_vars($node->field_exhibition_date)); ?>
   </code>
   <div class="content"<?php print $content_attributes;?>>
     <div class="blog-post">
