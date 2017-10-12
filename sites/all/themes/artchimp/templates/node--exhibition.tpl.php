@@ -5,11 +5,11 @@
       <div class="<?php echo ($page) ? "post-img" : ""; ?>">
         <?php print render($content['field_photo']);?>
       </div>
-      <div class="jikku-meta">
+      <div class="jikku-meta lh-solid mt3 mb5">
         <?php print render($title_prefix);?>
         <?php if (!$page): ?>
-          <div class="jikku-location">Hardcoded Location</div>
-          <div class="jikku-title">
+          <div class="jikku-location ttu b black-60">Hardcoded Location</div>
+          <div class="jikku-title f1 black-80 mt2 mb3">
             <a href="<?php print $node_url;?>">
               <?php print $title;?>
             </a>
