@@ -8,6 +8,7 @@
       <div class="jikku-meta">
         <?php print render($title_prefix);?>
         <?php if (!$page) : ?>
+          <div class="title-location">Hardcoded Location</div>
           <div class="jikku-title">
             <a href="<?php print $node_url;?>">
               <?php print $title;?>
@@ -20,10 +21,10 @@
           $endDate = date("d F Y", strtotime($node->field_exhibition_date['und']['0']['value2']));
         ?>
         <div class="jikku-date">
-         <?php echo $startDate ?> — <?php echo $endDate; ?>
+          <?php echo $startDate ?> — <?php echo $endDate; ?>
         </div>
       </div>
-        <?php if ($page): ?>
+        <?php if ($page) : ?>
           <div class="jikku-delete">
             <?php
               // We hide the comments and links now so that we can render them later.
