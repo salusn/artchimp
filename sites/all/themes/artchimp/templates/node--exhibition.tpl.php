@@ -8,7 +8,7 @@
 ?>
 
 <div id="node-<?php print $node->nid;?>" class="<?php print $classes;?> clearfix"<?php print $attributes;?>>
-  <code><?= $page ?></code>
+  <code class="jikku-debug"><?= $page ?></code>
   <div class="content"<?php print $content_attributes;?>>
     <div class="blog-post">
         <?php print render($title_prefix);?>
