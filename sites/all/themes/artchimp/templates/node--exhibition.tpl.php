@@ -9,7 +9,7 @@
         <?php print render($title_prefix);?>
         <?php if (!$page): ?>
           <div class="jikku-location ttu b black-60">Hardcoded Location</div>
-          <div class="jikku-title f1 black-80 mt2 mb3">
+          <div class="jikku-title f2 b black-80 mt2 mb3">
             <a href="<?php print $node_url;?>">
               <?php print $title;?>
             </a>
