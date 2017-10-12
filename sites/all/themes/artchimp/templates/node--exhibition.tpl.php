@@ -1,11 +1,10 @@
-<?php // Jikku Jose : Exhibition detail page and details page ?>
+<?php // Jikku | Working ?>
 <div id="node-<?php print $node->nid;?>" class="<?php print $classes;?> clearfix"<?php print $attributes;?>>
-
   <div class="content"<?php print $content_attributes;?>>
     <div class="blog-post">
-       <div class="<?php echo ($page) ? "post-img" : ""; ?>">
-         <?php print render($content['field_photo']);?>
-       </div>
+      <div class="<?php echo ($page) ? "post-img" : ""; ?>">
+        <?php print render($content['field_photo']);?>
+      </div>
       <div class="jikku-meta">
         <?php print render($title_prefix);?>
         <?php if (!$page) : ?>
@@ -24,24 +23,24 @@
          <?php echo $startDate ?> — <?php echo $endDate; ?>
         </div>
       </div>
-        <div class="jikku-delete">
-          <?php
-            // We hide the comments and links now so that we can render them later.
-            // VP ENGINEERING
-            hide($content['comments']);
-            hide($content['links']);
-            hide($content['body']);
-            hide($content['field_artist_id']);
-            print render($content);
-          ?>
-        </div>
-        <div class="post-text">
-          <?php print render($content['body']);?>
-        </div>
+      <div class="jikku-delete">
+        <?php
+          // We hide the comments and links now so that we can render them later.
+          // VP ENGINEERING
+          hide($content['comments']);
+          hide($content['links']);
+          hide($content['body']);
+          hide($content['field_artist_id']);
+          print render($content);
+        ?>
+      </div>
+      <div class="post-text">
+        <?php print render($content['body']);?>
+      </div>
         <?php if ($page): ?>
-          <?php if (isset($user->roles[3]) || isset($user->roles[4])) {?>
-<a href="<?php echo url('settings/exhibition/' . $node->nid) ?>">Add Works</a>
-<?php }?>
+        <?php if (isset($user->roles[3]) || isset($user->roles[4])) { ?>
+          <a href="<?php echo url('settings/exhibition/' . $node->nid) ?>">Add Works</a>
+        <?php } ?>
           <hr class="mt-0 mb-0">
            <h3>Artists</h3>
             <?php //print views_embed_view('list_exhibitions', 'block_2');?>
