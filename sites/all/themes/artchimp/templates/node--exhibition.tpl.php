@@ -21,7 +21,7 @@
           $end_date = date("d F Y", strtotime($node->field_exhibition_date['und']['0']['value2']));
           $date_range = "$start_date — $end_date";
 
-          echo "<div class='jikku-date'>$range</div>";
+          echo "<div class='jikku-date'>$date_range</div>";
         ?>
       </div>
         <?php if ($page): ?>
