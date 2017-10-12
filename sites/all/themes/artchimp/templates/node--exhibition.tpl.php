@@ -23,21 +23,21 @@
          <?php echo $startDate ?> — <?php echo $endDate; ?>
         </div>
       </div>
-      <div class="jikku-delete">
-        <?php
-          // We hide the comments and links now so that we can render them later.
-          // VP ENGINEERING
-          hide($content['comments']);
-          hide($content['links']);
-          hide($content['body']);
-          hide($content['field_artist_id']);
-          print render($content);
-        ?>
-      </div>
-      <div class="post-text">
-        <?php print render($content['body']);?>
-      </div>
         <?php if ($page): ?>
+          <div class="jikku-delete">
+            <?php
+              // We hide the comments and links now so that we can render them later.
+              // VP ENGINEERING
+              hide($content['comments']);
+              hide($content['links']);
+              hide($content['body']);
+              hide($content['field_artist_id']);
+              print render($content);
+            ?>
+          </div>
+          <div class="post-text">
+            <?php print render($content['body']);?>
+          </div>
         <?php if (isset($user->roles[3]) || isset($user->roles[4])) { ?>
           <a href="<?php echo url('settings/exhibition/' . $node->nid) ?>">Add Works</a>
         <?php } ?>
