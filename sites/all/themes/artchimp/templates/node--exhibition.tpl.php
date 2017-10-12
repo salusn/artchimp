@@ -5,16 +5,16 @@
 
   $date_range = formatted_date_range($_start_date, $_end_date);
   $location = $node->field_location_new['und']['0']['value'];
+  $isDetailPage = $page
 ?>
 
 <div id="node-<?php print $node->nid;?>" class="<?php print $classes;?> clearfix"<?php print $attributes;?>>
-  <code class="jikku-debug"><?= $page ?></code>
   <div class="content"<?php print $content_attributes;?>>
     <div class="blog-post">
-        <?php print render($title_prefix);?>
-        <?php if (!$page): ?>
-          <div class="<?php echo ($page) ? "post-img" : ""; ?>">
-            <?php print render($content['field_photo']);?>
+        <?= render($title_prefix) ?>
+        <?php if (!$isDetailPage): ?>
+          <div class="<?= $isDetailPage ? "post-img" : ""; ?>">
+            <?= render($content['field_photo']);?>
           </div>
           <div class="jikku-meta lh-solid mt3 mb5">
           <div class="jikku-location ttu b black-60"><?= $location ?></div>
@@ -27,12 +27,13 @@
           </div>
         <?php endif; ?>
 
-        <?php print render($title_suffix);?>
+        <?= render($title_suffix) ?>
+        <code class="jikku-debug"><?= $title_suffix ?></code>
 
-        <?php if ($page): ?>
+        <?php if ($isDetailPage) : ?>
           <div class="row mb6">
             <div class="col-md-8">
-              <div class="<?php echo ($page) ? "post-img" : ""; ?>">
+              <div class="<?php echo ($isDetailPage) ? "post-img" : ""; ?>">
                 <?php print render($content['field_photo']);?>
               </div>
             </div>
