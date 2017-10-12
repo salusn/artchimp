@@ -7,9 +7,9 @@
 		</div>
 		<div class="col-md-4">
       <div class="mt4">
-        <div class="ttu black-40"><?php print $value['field_location_new']?></div>
-        <div class="f2 b mv2"><?php print $value['title']?></div>
-        <div class="">April 23 — May 4, 2017</div>
+        <div class="ttu black-40 b"><?php print $value['field_location_new']?></div>
+        <div class="f2 b"><?php print $value['title']?></div>
+        <div class="mb3">April 23 — May 4, 2017</div>
         <div class=""><?php print $value['field_exhibition_date']?></div>
         <div class=""><?php print $value['body']?></div>
       </div>
