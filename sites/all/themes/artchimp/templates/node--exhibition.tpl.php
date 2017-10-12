@@ -23,9 +23,9 @@
 
           $start_date = date("d F", strtotime($node->field_exhibition_date['und']['0']['value']));
           $end_date = date("d F Y", strtotime($node->field_exhibition_date['und']['0']['value2']));
-          $range = "$start_date — $end_date";
+          $date_range = "$start_date — $end_date";
 
-          echo date_markup($range);
+          echo date_markup($date_range);
         ?>
       </div>
         <?php if ($page) : ?>
