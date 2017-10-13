@@ -1,5 +1,3 @@
-
-<?php //Jikku Blog Litsing Page?>
 <?php if ($rows): ?>
   <?php foreach ($view->style_plugin->rendered_fields as $key => $value) {?>
     <div class="jikku-row row mb5">
