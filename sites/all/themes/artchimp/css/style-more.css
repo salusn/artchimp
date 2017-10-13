@@ -273,3 +273,12 @@ fieldset {
   margin-bottom: 4px;
   border-radius: 3px;
 }
+
+.alert {
+  background: #FFFAF0;
+  margin-top: 30px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
