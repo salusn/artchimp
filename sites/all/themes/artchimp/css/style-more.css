@@ -1,48 +1,62 @@
-.shop-add-btn-cont .form-submit{
-    color: #4b4e53;
-    background-color: #d7d9dc;
-    padding: 10px 37px 10px 37px;
-    display: inline-block;
-    border: none;
-    border-radius: 2px;
-    transition: all .3s ease 0s;
-    outline: none;
-    position: relative;
-    width: 100%;
-    text-align: center;
+.shop-add-btn-cont .form-submit {
+  color: #4b4e53;
+  background-color: #d7d9dc;
+  padding: 10px 37px 10px 37px;
+  display: inline-block;
+  border: none;
+  border-radius: 2px;
+  transition: all .3s ease 0s;
+  outline: none;
+  position: relative;
+  width: 100%;
+  text-align: center;
 }
 
-.shop-add-btn-cont .form-submit:hover{
-    background-color: #4b4e53;
-    color: #fff;
-    cursor: pointer;
+.shop-add-btn-cont .form-submit:hover {
+  background-color: #4b4e53;
+  color: #fff;
+  cursor: pointer;
 }
 
-.shopping-cart-table th{text-transform: uppercase;}
-.form-submit {margin-right: 5px}
-.widget-body ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    background: none;
+.shopping-cart-table th {
+  text-transform: uppercase;
 }
-.fieldset-wrapper{
-    margin: 10px 0;
+.form-submit {
+  margin-right: 5px;
 }
-.form-select{height: 40px}
-.checkout-continue,.checkout-cancel,.checkout-back{margin: 0 10px}
-.commerce-order-handler-area-order-total .commerce-price-formatted-components{width: 100%;}
+.widget-body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+.fieldset-wrapper {
+  margin: 10px 0;
+}
+.form-select {
+  height: 40px;
+}
+.checkout-continue,
+.checkout-cancel,
+.checkout-back {
+  margin: 0 10px;
+}
+.commerce-order-handler-area-order-total .commerce-price-formatted-components {
+  width: 100%;
+}
 .commerce-order-handler-area-order-total .commerce-price-formatted-components td,
-.checkout-review td{padding: 10px;}
-.checkout-review .component-type-commerce-price-formatted-amount{
-    border: 1px solid #ccc;
-    background: #fefefe;
+.checkout-review td {
+  padding: 10px;
+}
+.checkout-review .component-type-commerce-price-formatted-amount {
+  border: 1px solid #ccc;
+  background: #fefefe;
 }
 .fa.green {
-    color:#259b24;
+  color: #259b24;
 }
 .fa.red {
-    color:#ff5722;
+  color: #ff5722;
 }
 
 .homepage-hero-module {
@@ -65,7 +79,6 @@
   height: 641px;
   overflow: hidden;
   background: #000;
-
 }
 .video-container .poster img {
   width: 100%;
@@ -110,107 +123,138 @@
 }
 .video-container video.fillWidth {
   /*width: 100%;*/
-
 }
 @media screen and (max-width: 600px) {
-.video-container{display: none}
+  .video-container {
+    display: none;
+  }
 }
-.profile .user-picture{float: none}
-.fes7-img{
+.profile .user-picture {
+  float: none;
+}
+.fes7-img {
   background-image: url("../images/fes7.jpg");
 }
-.page-node textarea{border:1px solid #dedede; padding: 10px}
-
-fieldset.date-combo .container-inline-date .date-padding{
-	padding: 0
+.page-node textarea {
+  border: 1px solid #dedede;
+  padding: 10px;
 }
-.field-name-field-date legend{font-weight: bold; font-size: 14px}
-label{display: block}
-.padding-top-10{padding-top: 10px}
-.admin-page .page-title-small{
-	padding-bottom: 0;
+
+fieldset.date-combo .container-inline-date .date-padding {
+  padding: 0;
+}
+.field-name-field-date legend {
+  font-weight: bold;
+  font-size: 14px;
+}
+label {
+  display: block;
+}
+.padding-top-10 {
+  padding-top: 10px;
+}
+.admin-page .page-title-small {
+  padding-bottom: 0;
 }
 .admin-page .page-title {
-    margin-top: 20px;
-    margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .row.vdivide [class*='col-']:not(:last-child):after {
   background: #e0e0e0;
   width: 1px;
   content: "";
-  display:block;
+  display: block;
   position: absolute;
-  top:0;
+  top: 0;
   bottom: 0;
   right: 0;
   min-height: 70px;
 }
 .tabs ul.nav li:last-child {
-	display: none;
+  display: none;
 }
-.table tr.odd,.table tr.even{
-	background: #fff !important
+.table tr.odd,
+.table tr.even {
+  background: #fff !important;
 }
-.p-50-top{padding-top: 50px;}
-.p-20-top{padding-top: 20px;}
-.p-20-cont{padding-top: 20px;padding-bottom: 20px;}
+.p-50-top {
+  padding-top: 50px;
+}
+.p-20-top {
+  padding-top: 20px;
+}
+.p-20-cont {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 fieldset {
-    padding: .35em .625em .75em !important;
-    margin: 0 2px 5px 2px !important;
-    border: 1px solid silver !important;
+  padding: .35em .625em .75em !important;
+  margin: 0 2px 5px 2px !important;
+  border: 1px solid silver !important;
 }
-.relating-wrapper{
-	position: relative
+.relating-wrapper {
+  position: relative;
 }
-.button-right{
-	position: absolute;
-	top:-50px;
-	right: 0
+.button-right {
+  position: absolute;
+  top: -50px;
+  right: 0;
 }
-.no-title .button-right{
-	top:0;
+.no-title .button-right {
+  top: 0;
 }
-.round-img img{
-	border-radius: 50%;
+.round-img img {
+  border-radius: 50%;
 }
-.btn-socialm{
-	min-width: 150px;
-	text-align: left
+.btn-socialm {
+  min-width: 150px;
+  text-align: left;
 }
-.date-display-start, .date-display-end{
-	font-weight: 600
+.date-display-start,
+.date-display-end {
+  font-weight: 600;
 }
-.page-dash{min-height: 500px}
-.page-title em{
-	font-style: normal;
-	font-weight: bold
+.page-dash {
+  min-height: 500px;
+}
+.page-title em {
+  font-style: normal;
+  font-weight: bold;
 }
 .page-title em::after {
-    content: " > ";
+  content: " > ";
 }
-#edit-delete{
-	background: #d9534f;
+#edit-delete {
+  background: #d9534f;
 }
-.field-add-more-submit{
-	background: #a79292 !important;
-	position: absolute;
-	top: 0;
-	right: 0;
+.field-add-more-submit {
+  background: #a79292 !important;
+  position: absolute;
+  top: 0;
+  right: 0;
   padding: 5px 10px;
 }
-.form-wrapper{position: relative}
-.member-image img{
+.form-wrapper {
+  position: relative;
+}
+.member-image img {
   width: 100%;
 }
-.post-img,.post-text {
-      margin-bottom: 25px;
+.post-img,
+.post-text {
+  margin-bottom: 25px;
 }
 .location-hidden {
-  display: none
+  display: none;
 }
 .view-header {
   margin-bottom: 10px;
 }
 .date-display-range {
   display: none;
+}
+
+.header.no-transparent .header-wrapper {
+  background: #FFFAF0;
 }
