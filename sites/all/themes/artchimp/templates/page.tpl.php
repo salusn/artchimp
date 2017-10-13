@@ -132,18 +132,18 @@ $path_to_theme = $base_url . '/' . drupal_get_path('theme', 'artchimp');?>
       </div>
     <?php endif;?>
 
-    <footer class="page-section pb-20 tarq-bg-red">
-      <div class="container">
-        <div class="footer-2-copy-cont clearfix">
-          <div class="footer-2-soc-a right">
+    <footer class="page-section tarq-bg-red">
+      <div class="container pa4">
+        <div class="">
+          <div class="right">
             <a href="" title="Facebook" target="_blank">
-              <i class="fa fa-facebook tarq-white"></i>
+              <i class="fa fa-facebook tarq-white ph1"></i>
             </a>
             <a href="" title="Twitter" target="_blank">
-              <i class="fa fa-twitter tarq-white"></i>
+              <i class="fa fa-twitter tarq-white ph1"></i>
             </a>
             <a href="" title="LinkedIn" target="_blank">
-              <i class="fa fa-linkedin tarq-white"></i>
+              <i class="fa fa-linkedin tarq-white ph1"></i>
             </a>
           </div>
           <div class="left">
