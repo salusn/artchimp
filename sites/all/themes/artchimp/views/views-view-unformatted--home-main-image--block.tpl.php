@@ -1,5 +1,5 @@
 <?php if ($rows): ?>
-	<div class="row mt6">
+	<div class="row mt6 mb0-ns mb4">
 	<?php foreach ($view->style_plugin->rendered_fields as $key => $value) {
 	?>
 		<div class="col-md-8">
