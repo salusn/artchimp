@@ -1,6 +1,7 @@
 <?php // // Jikku Jose : Artist details page.Artist listing page is views-view--list-artists--page-1.tpl.php(You already added changes here.)?>
 <div id="node-<?php print $node->nid;?>" class="<?php print $classes;?> clearfix" <?php print $attributes;?>>
   <div class="content" <?php print $content_attributes;?>>
+
     <div class="blog-post">
 
         <?php if ($page): ?>
