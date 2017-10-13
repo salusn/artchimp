@@ -26,7 +26,13 @@ function artchimp_form_alter(&$form, &$form_state, $form_id) {
       if(arg(2) == "edit") {
         $form['actions']['submit']['#submit'][] = 'artchimp_exhibitioneditsubmit';              
       }
+      if(arg(0) == 'node' && arg(2) == 'edit'){
+        $artist_node = node_load(arg(1));
+       drupal_set_title($artist_node->title);
+      }
+
       break;
+
       case "artist_node_form":
       if(arg(2) == "edit") {  
         $form['actions']['submit']['#submit'][] = '_artchimp_editsubmit';
@@ -37,21 +43,38 @@ function artchimp_form_alter(&$form, &$form_state, $form_id) {
       }
      
       break;
+
       case "work_node_form":
       if(arg(2) == "edit") {
         $form['actions']['submit']['#submit'][] = 'artchimp_workeditsubmit';             
       }
+      if(arg(0) == 'node' && arg(2) == 'edit'){
+        $artist_node = node_load(arg(1));
+       drupal_set_title($artist_node->title);
+      }
+
       break;
+
       case "blog_node_form":
       if(arg(2) == "edit") {
         $form['actions']['submit']['#submit'][] = 'artchimp_blogeditsubmit';
               
       }
+      if(arg(0) == 'node' && arg(2) == 'edit'){
+        $artist_node = node_load(arg(1));
+       drupal_set_title($artist_node->title);
+      }
       break;
+
       case "publication_node_form":
       if(arg(2) == "edit") {
         $form['actions']['submit']['#submit'][] = 'artchimp_publicationeditsubmit';              
       }
+      if(arg(0) == 'node' && arg(2) == 'edit'){
+        $artist_node = node_load(arg(1));
+       drupal_set_title($artist_node->title);
+      }
+      
       break;       
      } 
 }
