@@ -107,7 +107,7 @@ $path_to_theme = $base_url . '/' . drupal_get_path('theme', 'artchimp');?>
       </div>
     <?php endif;?>
 
-    <div class="page-section pv6-ns ph2">
+    <div class="page-section pv6-ns ph2 tarq-white">
       <div class="container min-h-100">
         <div class="row mt3">
         <div class="tarq-page-title"><?php print $title;?></div>
