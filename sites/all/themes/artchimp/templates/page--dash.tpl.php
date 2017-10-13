@@ -169,6 +169,8 @@ print theme('links__system_main_menu', array('links' => $main_menu, 'attributes'
   </div>
 </footer>
 
+<?php print render($page['footer']);?>
+
 <!-- BACK TO TOP -->
 <p id="back-top">
   <a href="#top" title="Back to Top"><span class="icon icon-arrows-up"></span></a>

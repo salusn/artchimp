@@ -18,8 +18,8 @@ function exhibition_date_markup($range) {
 }
 
 function formatted_date_range($date_1, $date_2) {
-  $start_date = date("d F", strtotime($date_1));
-  $end_date = date("d F Y", strtotime($date_2));
+	$start_date = date("d F", strtotime($date_1));
+	$end_date = date("d F Y", strtotime($date_2));
 
-  return "$start_date — $end_date";
+	return "$start_date — $end_date";
 }
