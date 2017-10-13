@@ -270,4 +270,6 @@ fieldset {
 
 .leaf {
   background-color: rgba(153, 49, 49, 0.1);
+  margin-bottom: 4px;
+  border-radius: 3px;
 }
