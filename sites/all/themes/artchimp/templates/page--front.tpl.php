@@ -68,7 +68,7 @@ $path_to_theme = $base_url . '/' . drupal_get_path('theme', 'artchimp');?>
     </header>
 
     <div class="container min-h-100">
-      <?= render($page['content_front']); ?>
+      <?=render($page['content_front']);?>
     </div>
 
     <!-- FOOTER 2 BLACK -->
@@ -98,6 +98,8 @@ $path_to_theme = $base_url . '/' . drupal_get_path('theme', 'artchimp');?>
         </div>
       </div>
     </footer>
+
+    <?php print render($page['footer']);?>
 
     <!-- BACK TO TOP -->
     <p id="back-top">
