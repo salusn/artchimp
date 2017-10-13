@@ -1,5 +1,7 @@
+
+<?php //Jikku Blog Litsing Page?>
 <?php if ($rows): ?>
-  <?php foreach ($view->style_plugin->rendered_fields as $key => $value) { ?>
+  <?php foreach ($view->style_plugin->rendered_fields as $key => $value) {?>
     <div class="jikku-row row mb5">
       <div class="jikku-column col-md-12">
         <div class="ph3 pl0-ns">
@@ -13,5 +15,5 @@
         </div>
       </div>
     </div>
-  <?php } ?>
+  <?php }?>
 <?php endif;?>
