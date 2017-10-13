@@ -147,8 +147,8 @@ $path_to_theme = $base_url . '/' . drupal_get_path('theme', 'artchimp');?>
             </a>
           </div>
           <div class="left">
-            <a class="tarq-white" href="http://www.artchimp.com/" target="_blank">
-             &copy; ARTCHIMP 2017
+            <a class="tarq-white" href="http://www.tarq.in/" target="_blank">
+             &copy; Tarq 2017
             </a>
           </div>
         </div>

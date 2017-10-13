@@ -71,29 +71,24 @@ $path_to_theme = $base_url . '/' . drupal_get_path('theme', 'artchimp');?>
       <?=render($page['content_front']);?>
     </div>
 
-    <!-- FOOTER 2 BLACK -->
-    <footer class="page-section pb-20 footer2-black">
-      <div class="container">
-
-        <!-- Social Links -->
-        <div class="footer-2-copy-cont clearfix">
-          <div class="footer-2-soc-a right">
+    <footer class="page-section tarq-bg-red">
+      <div class="container pa4">
+        <div class="">
+          <div class="right">
             <a href="" title="Facebook" target="_blank">
-              <i class="fa fa-facebook"></i>
+              <i class="fa fa-facebook tarq-white ph1"></i>
             </a>
             <a href="" title="Twitter" target="_blank">
-              <i class="fa fa-twitter"></i>
+              <i class="fa fa-twitter tarq-white ph1"></i>
             </a>
             <a href="" title="LinkedIn" target="_blank">
-              <i class="fa fa-linkedin"></i>
+              <i class="fa fa-linkedin tarq-white ph1"></i>
             </a>
           </div>
-
-          <!-- Copyright -->
           <div class="left">
-            <a class="footer-2-copy" href="http://www.artchimp.com/" target="_blank">
-                    &copy; ARTCHIMP 2017
-                  </a>
+            <a class="tarq-white" href="http://www.tarq.in/" target="_blank">
+             &copy; Tarq 2017
+            </a>
           </div>
         </div>
       </div>
