@@ -256,7 +256,7 @@ fieldset {
 }
 
 .header.no-transparent .header-wrapper {
-  background: #FFFAF0;
+  background: #fffaf0;
 }
 
 ::selection {
@@ -275,10 +275,13 @@ fieldset {
 }
 
 .alert {
-  background: #FFFAF0;
   margin-top: 30px;
   padding: 15px;
   margin-bottom: 20px;
   border: 1px solid transparent;
   border-radius: 4px;
+}
+
+#main-menu .navbar .nav > li > a {
+  color: rgba(153, 49, 49, 1);
 }
