@@ -160,6 +160,8 @@ $path_to_theme = $base_url . '/' . drupal_get_path('theme', 'artchimp');?>
       </div>
     </footer>
 
+    <?php print render($page['footer']);?>
+
     <!-- BACK TO TOP -->
     <p id="back-top">
       <a href="#top" title="Back to Top"><span class="icon icon-arrows-up"></span></a>
