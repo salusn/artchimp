@@ -1,4 +1,4 @@
-<?php // Jikku | Working ?>
+<?php // Jikku | contain listing and details pages ?>
 <?php
 $_start_date = $node->field_event_date['und']['0']['value'];
 $_end_date = $node->field_event_date['und']['0']['value2'];
