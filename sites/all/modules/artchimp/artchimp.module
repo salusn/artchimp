@@ -86,7 +86,19 @@ function artchimp_form_alter(&$form, &$form_state, $form_id) {
        drupal_set_title($event_node->title);
       }
 
-      break;       
+      break;   
+
+       case "section_node_form":
+      if(arg(2) == "edit") {
+        $form['actions']['submit']['#submit'][] = 'artchimp_sectioneditsubmit';              
+      }
+      if(arg(0) == 'node' && arg(2) == 'edit'){
+        $section_node = node_load(arg(1));
+       drupal_set_title($section_node->title);
+      }
+
+      break;    
+
      } 
 }
 
