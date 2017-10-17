@@ -105,9 +105,8 @@ function artchimp_form_alter(&$form, &$form_state, $form_id) {
 function _artchimp_editsubmit($form, &$form_state){
  
   $usr = node_load(arg(1));
-
-  $name = $usr->title.' '.$usr->field_lastname['und']['0']['value'];
-  $link = url('content/'.$usr->title);
+  $name = $usr->title;
+  $link = url('node/'.$usr->nid);
   drupal_get_messages('status');
   drupal_set_message(t('Artist:<a href="@link" target="_blank">%name</a> was updated',array('@link'=>$link,
   '%name'=>$name)));
