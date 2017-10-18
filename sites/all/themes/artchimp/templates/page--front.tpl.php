@@ -79,7 +79,7 @@
     </p>
     <script type="text/javascript">
       var myVar = '<?= "Hello World" ?>';
-      console.log(myVar)
+      console.log(jQuery('#nav'))
     </script>
   </div>
 </div>
