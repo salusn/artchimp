@@ -80,7 +80,7 @@
     </p>
     <script type="text/javascript">
       var footer = document.querySelector("#nav");
-      console.log(footer.style.background);
+      console.log('footer:', footer.style.background, '<?= $tarq_background ?>');
       footer.style.background = '<?= $tarq_background ?>';
     </script>
   </div>
