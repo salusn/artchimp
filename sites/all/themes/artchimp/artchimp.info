@@ -48,4 +48,4 @@ scripts[] = js/jquery.backgroundvideo.min.js
 scripts[] = js/main.js
 scripts[] = js/jquery.flexslider-min.js
 scripts[] = js/flex-slider.js
-
+scripts[] = js/tarq-example.js
