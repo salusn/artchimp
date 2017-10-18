@@ -1,6 +1,7 @@
 <?php
   global $base_url;
-  $path_to_theme = $base_url . '/' . drupal_get_path('theme', 'artchimp')
+  $path_to_theme = $base_url . '/' . drupal_get_path('theme', 'artchimp');
+  $tarq_background = '#2656a6';
 ?>
 <div id="wrap" class="boxed ">
   <div class="grey-bg">
@@ -78,7 +79,8 @@
       <a href="#top" title="Back to Top"><span class="icon icon-arrows-up"></span></a>
     </p>
     <script type="text/javascript">
-      console.log(document.querySelector("#nav"))
+      var footer = document.querySelector("#nav")
+      footer.style.background = '<?= $tarq_background ?>'
     </script>
   </div>
 </div>
