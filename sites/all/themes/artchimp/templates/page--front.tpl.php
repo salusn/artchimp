@@ -78,7 +78,4 @@
       <a href="#top" title="Back to Top"><span class="icon icon-arrows-up"></span></a>
     </p>
   </div>
-  <script>
-    jQuery('#nav').css('opacity', 0.5)
-  </script>
 </div>
