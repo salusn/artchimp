@@ -78,7 +78,7 @@
       <a href="#top" title="Back to Top"><span class="icon icon-arrows-up"></span></a>
     </p>
     <script type="text/javascript">
-      console.log(document.query_selector("#nav"))
+      console.log(document.querySelector("#nav"))
     </script>
   </div>
 </div>
