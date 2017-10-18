@@ -79,8 +79,9 @@
       <a href="#top" title="Back to Top"><span class="icon icon-arrows-up"></span></a>
     </p>
     <script type="text/javascript">
-      var footer = document.querySelector("#nav")
-      footer.style.background = '<?= $tarq_background ?>'
+      var footer = document.querySelector("#nav");
+      console.log(footer.style.background);
+      footer.style.background = '<?= $tarq_background ?>';
     </script>
   </div>
 </div>
