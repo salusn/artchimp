@@ -2,15 +2,23 @@
   global $base_url;
   $path_to_theme = $base_url . '/' . drupal_get_path('theme', 'artchimp');
 
+  /*
+   * Assign to the following variables to get the theme reflect it
+   *
+   */
+
   $chimp_title = 'ArtChimp';
-  $chimp_background = '#2656a6';
   $chimp_foreground = '#fafafa';
+  $chimp_background = '#2656a6';
   $chimp_facebook = 'http://facebook.com';
   $chimp_twitter = 'http://twitter.com';
   $chimp_instagram = 'http://instagram.com';
   $chimp_website = 'http://artchimp.com';
 ?>
 <div id="wrap" class="boxed ">
+  <code>
+  <?= $logo ?>
+  </code>
   <div class="grey-bg">
     <header id="nav" class="header header-1 no-transparent mobile-no-transparent">
       <div class="header-wrapper">
@@ -21,7 +29,7 @@
                 <?php if ($logo): ?>
                   <a href="<?php print $front_page;?>" title="<?php print t('Home');?>" rel="home" id="logo" class="clearfix">
                     <img
-                      src="<?php print $logo;?>"
+                      src="<?php print $logo ?>"
                       class="logo-img"
                       alt="<?php print t('Home');?>"
                       />
@@ -90,9 +98,12 @@
         var chimpBackground = '<?= $chimp_background ?>';
         var chimpForeground = '<?= $chimp_foreground ?>';
 
+        var icon = document.querySelector(".icon_menu");
         var navBar = document.querySelector(".header-wrapper");
         var navLinks = document.querySelectorAll("#nav li a");
         var footer = document.querySelector("footer");
+
+        icon.style.color = chimpForeground
 
         navBar.style.background = chimpBackground;
         navLinks.forEach(link => link.style.color = chimpForeground);
