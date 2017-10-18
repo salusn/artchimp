@@ -1,32 +1,26 @@
-<?php global $base_url;
-$path_to_theme = $base_url . '/' . drupal_get_path('theme', 'artchimp');?>
+<?php
+  global $base_url;
+  $path_to_theme = $base_url . '/' . drupal_get_path('theme', 'artchimp')
+?>
 <div id="wrap" class="boxed ">
   <div class="grey-bg">
-
-    <!-- HEADER 1 NO-TRANSPARENT -->
     <header id="nav" class="header header-1 no-transparent mobile-no-transparent">
-
       <div class="header-wrapper">
         <div class="container-m-30 clearfix">
           <div class="logo-row">
-
-            <!-- LOGO -->
             <div class="logo-container-2">
               <div class="logo-2">
-
                 <?php if ($logo): ?>
-                <a href="<?php print $front_page;?>" title="<?php print t('Home');?>" rel="home" id="logo" class="clearfix">
-            <img
-              src="<?php print $logo;?>"
-              class="logo-img"
-              alt="<?php print t('Home');?>"
-              />
-          </a>
-                <?php endif;?>
-
+                  <a href="<?php print $front_page;?>" title="<?php print t('Home');?>" rel="home" id="logo" class="clearfix">
+                    <img
+                      src="<?php print $logo;?>"
+                      class="logo-img"
+                      alt="<?php print t('Home');?>"
+                      />
+                  </a>
+                <?php endif; ?>
               </div>
             </div>
-            <!-- BUTTON -->
             <div class="menu-btn-respons-container">
               <button type="button" class="navbar-toggle btn-navbar collapsed" data-toggle="collapse" data-target="#main-menu .navbar-collapse">
                 <span aria-hidden="true" class="icon_menu hamb-mob-icon"></span>
@@ -34,37 +28,21 @@ $path_to_theme = $base_url . '/' . drupal_get_path('theme', 'artchimp');?>
             </div>
           </div>
         </div>
-
-        <!-- MAIN MENU CONTAINER -->
         <div class="main-menu-container">
-
           <div class="container-m-30 clearfix">
-
-            <!-- MAIN MENU -->
             <div id="main-menu">
               <div class="navbar navbar-default" role="navigation">
-
-                <!-- MAIN MENU LIST -->
                 <nav class="collapse collapsing navbar-collapse right-1024">
-
-                  <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('class' => array('nav', 'navbar-nav'))));?>
-
+                  <?= theme(
+                    'links__system_main_menu',
+                    array('links' => $main_menu, 'attributes' => array('class' => array('nav', 'navbar-nav'))))
+                  ?>
                 </nav>
               </div>
             </div>
-            <!-- END main-menu -->
-
           </div>
-          <!-- END container-m-30 -->
-
         </div>
-        <!-- END main-menu-container -->
-
-        <!-- SEARCH READ DOCUMENTATION -->
-
       </div>
-      <!-- END header-wrapper -->
-
     </header>
 
     <div class="container min-h-100">
@@ -96,7 +74,6 @@ $path_to_theme = $base_url . '/' . drupal_get_path('theme', 'artchimp');?>
 
     <?php print render($page['footer']);?>
 
-    <!-- BACK TO TOP -->
     <p id="back-top">
       <a href="#top" title="Back to Top"><span class="icon icon-arrows-up"></span></a>
     </p>
