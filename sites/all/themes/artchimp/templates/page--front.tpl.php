@@ -4,7 +4,6 @@
 ?>
 <div id="wrap" class="boxed ">
   <div class="grey-bg">
-Jikku
     <header id="nav" class="header header-1 no-transparent mobile-no-transparent">
       <div class="header-wrapper">
         <div class="container-m-30 clearfix">
