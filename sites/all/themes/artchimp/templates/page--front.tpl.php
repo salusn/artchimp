@@ -2,8 +2,8 @@
   global $base_url;
   $path_to_theme = $base_url . '/' . drupal_get_path('theme', 'artchimp');
 
-  $tarq_background = '#2656a6';
-  $tarq_foreground = '#fafafa';
+  $chimp_background = '#2656a6';
+  $chimp_foreground = '#fafafa';
 ?>
 <div id="wrap" class="boxed ">
   <div class="grey-bg">
@@ -68,7 +68,7 @@
           </div>
           <div class="left">
             <a class="tarq-white" href="http://www.tarq.in/" target="_blank">
-             &copy; Tarq 2017
+             &copy; Chimp 2017
             </a>
           </div>
         </div>
@@ -82,9 +82,9 @@
     </p>
     <script type="text/javascript">
       var footer = document.querySelector("footer");
-      var tarqBackground = '<?= $tarq_background ?>';
+      var chimpBackground = '<?= $chimp_background ?>';
 
-      footer.style.background = tarqBackground;
+      footer.style.background = chimpBackground;
     </script>
   </div>
 </div>
