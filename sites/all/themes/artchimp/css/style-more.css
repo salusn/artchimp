@@ -255,10 +255,6 @@ fieldset {
   display: none;
 }
 
-.header.no-transparent .header-wrapper {
-  background: #fffaf0;
-}
-
 ::selection {
   background-color: rgba(153, 49, 49, 0.1);
   color: rgba(153, 49, 49, 1);

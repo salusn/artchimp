@@ -81,10 +81,20 @@
       <a href="#top" title="Back to Top"><span class="icon icon-arrows-up"></span></a>
     </p>
     <script type="text/javascript">
-      var footer = document.querySelector("footer");
-      var chimpBackground = '<?= $chimp_background ?>';
+      (function() {
+        var chimpBackground = '<?= $chimp_background ?>';
+        var chimpForeground = '<?= $chimp_foreground ?>';
 
-      footer.style.background = chimpBackground;
+        var navBar = document.querySelector(".header-wrapper");
+        var navLinks = document.querySelectorAll("#nav li a");
+        var footer = document.querySelector("footer");
+
+        navBar.style.background = chimpBackground;
+        navLinks.forEach(link => link.style.color = chimpForeground)
+
+        footer.style.background = chimpBackground;
+        footer.style.color = chimpForeground
+      })();
     </script>
   </div>
 </div>
