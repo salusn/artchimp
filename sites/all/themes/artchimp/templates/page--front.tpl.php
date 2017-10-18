@@ -3,11 +3,12 @@
   $path_to_theme = $base_url . '/' . drupal_get_path('theme', 'artchimp');
 
   /*
-   * Assign to the following variables to get the theme reflect it
+   * Assign to the following variables:
    *
    */
 
   $chimp_title = 'ArtChimp';
+  $chimp_logo = $logo;
   $chimp_foreground = '#fafafa';
   $chimp_background = '#2656a6';
   $chimp_facebook = 'http://facebook.com';
@@ -16,9 +17,6 @@
   $chimp_website = 'http://artchimp.com';
 ?>
 <div id="wrap" class="boxed ">
-  <code>
-  <?= $logo ?>
-  </code>
   <div class="grey-bg">
     <header id="nav" class="header header-1 no-transparent mobile-no-transparent">
       <div class="header-wrapper">
@@ -26,10 +24,10 @@
           <div class="logo-row">
             <div class="logo-container-2">
               <div class="logo-2">
-                <?php if ($logo): ?>
+                <?php if ($chimp_logo): ?>
                   <a href="<?php print $front_page;?>" title="<?php print t('Home');?>" rel="home" id="logo" class="clearfix">
                     <img
-                      src="<?php print $logo ?>"
+                      src="<?= $chimp_logo ?>"
                       class="logo-img"
                       alt="<?php print t('Home');?>"
                       />
