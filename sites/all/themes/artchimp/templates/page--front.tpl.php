@@ -1,7 +1,9 @@
 <?php
   global $base_url;
   $path_to_theme = $base_url . '/' . drupal_get_path('theme', 'artchimp');
+
   $tarq_background = '#2656a6';
+  $tarq_foreground = '#fafafa';
 ?>
 <div id="wrap" class="boxed ">
   <div class="grey-bg">
@@ -80,9 +82,9 @@
     </p>
     <script type="text/javascript">
       var footer = document.querySelector("footer");
-      var color = '<?= $tarq_background ?>';
-      console.log('footer:', footer.style.background, color);
-      footer.style.background = color;
+      var tarqBackground = '<?= $tarq_background ?>';
+
+      footer.style.background = tarqBackground;
     </script>
   </div>
 </div>
