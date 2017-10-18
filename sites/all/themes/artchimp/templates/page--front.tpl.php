@@ -77,5 +77,9 @@
     <p id="back-top">
       <a href="#top" title="Back to Top"><span class="icon icon-arrows-up"></span></a>
     </p>
+    <script type="text/javascript">
+      var myVar = '<?= "Hello World" ?>';
+      console.log(myVar)
+    </script>
   </div>
 </div>
