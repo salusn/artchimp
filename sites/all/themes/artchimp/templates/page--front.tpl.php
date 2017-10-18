@@ -78,8 +78,7 @@
       <a href="#top" title="Back to Top"><span class="icon icon-arrows-up"></span></a>
     </p>
     <script type="text/javascript">
-      var myVar = '<?= "Hello World" ?>';
-      console.log(jQuery('#nav'))
+      console.log(document.query_selector("#nav"))
     </script>
   </div>
 </div>
