@@ -79,7 +79,7 @@
       <a href="#top" title="Back to Top"><span class="icon icon-arrows-up"></span></a>
     </p>
     <script type="text/javascript">
-      var footer = document.querySelector("#footer");
+      var footer = document.querySelector("footer");
       var color = '<?= $tarq_background ?>';
       console.log('footer:', footer.style.background, color);
       footer.style.background = color;
