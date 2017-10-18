@@ -2,8 +2,13 @@
   global $base_url;
   $path_to_theme = $base_url . '/' . drupal_get_path('theme', 'artchimp');
 
+  $chimp_title = 'ArtChimp';
   $chimp_background = '#2656a6';
   $chimp_foreground = '#fafafa';
+  $chimp_facebook = 'http://facebook.com';
+  $chimp_twitter = 'http://twitter.com';
+  $chimp_instagram = 'http://instagram.com';
+  $chimp_website = 'http://artchimp.com';
 ?>
 <div id="wrap" class="boxed ">
   <div class="grey-bg">
@@ -49,26 +54,26 @@
     </header>
 
     <div class="container min-h-100">
-      <?=render($page['content_front']);?>
+      <?= render($page['content_front']) ?>
     </div>
 
     <footer class="page-section tarq-bg-red">
       <div class="container pa4">
         <div class="">
           <div class="right">
-            <a href="" title="Facebook" target="_blank">
+          <a href="<?= $chimp_facebook ?>" title="Facebook" target="_blank">
               <i class="fa fa-facebook tarq-white ph1"></i>
             </a>
-            <a href="" title="Twitter" target="_blank">
+            <a href="<?= $chimp_twitter ?>" title="Twitter" target="_blank">
               <i class="fa fa-twitter tarq-white ph1"></i>
             </a>
-            <a href="" title="LinkedIn" target="_blank">
-              <i class="fa fa-linkedin tarq-white ph1"></i>
+            <a href="<?= $chimp_instagram ?>" title="Instagram" target="_blank">
+              <i class="fa fa-instagram tarq-white ph1"></i>
             </a>
           </div>
           <div class="left">
-            <a class="tarq-white" href="http://www.tarq.in/" target="_blank">
-             &copy; Chimp 2017
+          <a class="tarq-white" href="<?= $chimp_website ?>" target="_blank">
+          &copy; <?= $chimp_title ?>
             </a>
           </div>
         </div>
@@ -90,7 +95,7 @@
         var footer = document.querySelector("footer");
 
         navBar.style.background = chimpBackground;
-        navLinks.forEach(link => link.style.color = chimpForeground)
+        navLinks.forEach(link => link.style.color = chimpForeground);
 
         footer.style.background = chimpBackground;
         footer.style.color = chimpForeground
