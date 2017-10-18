@@ -80,7 +80,7 @@
     </p>
     <script type="text/javascript">
       var footer = document.querySelector("#nav");
-      var color = '<?= $tarq_background ?>':
+      var color = '<?= $tarq_background ?>';
       console.log('footer:', footer.style.background, color);
       footer.style.background = color;
     </script>
