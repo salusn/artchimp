@@ -1,11 +1,15 @@
 <?php
-global $base_url;
+global $base_url, $user;
+
+$usr = user_load($user->uid);
+// print_r($usr);
+// exit;
 $path_to_theme = $base_url . '/' . drupal_get_path('theme', 'artchimp');
 
 /*
-	   * Assign to the following variables:
-	   *
-*/
+ * Assign to the following variables:
+ *
+ */
 
 $chimp_title = 'ArtChimp';
 $chimp_logo = $logo;
