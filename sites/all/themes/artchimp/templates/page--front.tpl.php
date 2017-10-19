@@ -1,24 +1,23 @@
 <?php
 global $base_url, $user;
-
-$usr = user_load($user->uid);
-// print_r($usr);
-// exit;
 $path_to_theme = $base_url . '/' . drupal_get_path('theme', 'artchimp');
 
-/*
- * Assign to the following variables:
- *
- */
+if (user_is_anonymous()) {
+	$user_data = user_load(1);
+} else {
+	$user_data = user_load($user->uid);
+}
 
+$logo = file_create_url($user_data->field_logo['und']['0']['uri']);
 $chimp_title = 'ArtChimp';
 $chimp_logo = $logo;
-$chimp_foreground = '#fafafa';
-$chimp_background = '#2656a6';
-$chimp_facebook = 'http://facebook.com';
-$chimp_twitter = 'http://twitter.com';
-$chimp_instagram = 'http://instagram.com';
+$chimp_foreground = $user_data->field_foreground_colour['und']['0']['jquery_colorpicker'];
+$chimp_background = $user_data->field_background_colour['und']['0']['jquery_colorpicker'];
+$chimp_facebook = $user_data->field_facebook_url['und']['0']['value'];
+$chimp_twitter = $user_data->field_twitter_url['und']['0']['value'];
+$chimp_instagram = $user_data->field_instagram_url['und']['0']['value'];
 $chimp_website = 'http://artchimp.com';
+
 ?>
 <div id="wrap" class="boxed ">
   <div class="grey-bg">
@@ -97,8 +96,9 @@ $chimp_website = 'http://artchimp.com';
     </p>
     <script type="text/javascript">
       (function() {
-        var chimpBackground = '<?=$chimp_background?>';
-        var chimpForeground = '<?=$chimp_foreground?>';
+        var chimpBackground = '#<?=$chimp_background?>';
+        var chimpForeground = '#<?=$chimp_foreground?>';
+        console.log(chimpBackground, chimpForeground)
 
         var icon = document.querySelector(".icon_menu");
         var navBar = document.querySelector(".header-wrapper");
