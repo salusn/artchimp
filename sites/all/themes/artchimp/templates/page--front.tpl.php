@@ -1,20 +1,20 @@
 <?php
-  global $base_url;
-  $path_to_theme = $base_url . '/' . drupal_get_path('theme', 'artchimp');
+global $base_url;
+$path_to_theme = $base_url . '/' . drupal_get_path('theme', 'artchimp');
 
-  /*
-   * Assign to the following variables:
-   *
-   */
+/*
+	   * Assign to the following variables:
+	   *
+*/
 
-  $chimp_title = 'ArtChimp';
-  $chimp_logo = $logo;
-  $chimp_foreground = '#fafafa';
-  $chimp_background = '#2656a6';
-  $chimp_facebook = 'http://facebook.com';
-  $chimp_twitter = 'http://twitter.com';
-  $chimp_instagram = 'http://instagram.com';
-  $chimp_website = 'http://artchimp.com';
+$chimp_title = 'ArtChimp';
+$chimp_logo = $logo;
+$chimp_foreground = '#fafafa';
+$chimp_background = '#2656a6';
+$chimp_facebook = 'http://facebook.com';
+$chimp_twitter = 'http://twitter.com';
+$chimp_instagram = 'http://instagram.com';
+$chimp_website = 'http://artchimp.com';
 ?>
 <div id="wrap" class="boxed ">
   <div class="grey-bg">
@@ -27,12 +27,12 @@
                 <?php if ($chimp_logo): ?>
                   <a href="<?php print $front_page;?>" title="<?php print t('Home');?>" rel="home" id="logo" class="clearfix">
                     <img
-                      src="<?= $chimp_logo ?>"
+                      src="<?=$chimp_logo?>"
                       class="logo-img"
                       alt="<?php print t('Home');?>"
                       />
                   </a>
-                <?php endif; ?>
+                <?php endif;?>
               </div>
             </div>
             <div class="menu-btn-respons-container">
@@ -47,10 +47,10 @@
             <div id="main-menu">
               <div class="navbar navbar-default" role="navigation">
                 <nav class="collapse collapsing navbar-collapse right-1024">
-                  <?= theme(
-                    'links__system_main_menu',
-                    array('links' => $main_menu, 'attributes' => array('class' => array('nav', 'navbar-nav'))))
-                  ?>
+                  <?=theme(
+	'links__system_main_menu',
+	array('links' => $main_menu, 'attributes' => array('class' => array('nav', 'navbar-nav'))))
+?>
                 </nav>
               </div>
             </div>
@@ -60,26 +60,26 @@
     </header>
 
     <div class="container min-h-100">
-      <?= render($page['content_front']) ?>
+      <?=render($page['content_front'])?>
     </div>
 
     <footer class="page-section tarq-bg-red">
       <div class="container pa4">
         <div class="">
           <div class="right">
-          <a href="<?= $chimp_facebook ?>" title="Facebook" target="_blank">
+          <a href="<?=$chimp_facebook?>" title="Facebook" target="_blank">
               <i class="fa fa-facebook tarq-white ph1"></i>
             </a>
-            <a href="<?= $chimp_twitter ?>" title="Twitter" target="_blank">
+            <a href="<?=$chimp_twitter?>" title="Twitter" target="_blank">
               <i class="fa fa-twitter tarq-white ph1"></i>
             </a>
-            <a href="<?= $chimp_instagram ?>" title="Instagram" target="_blank">
+            <a href="<?=$chimp_instagram?>" title="Instagram" target="_blank">
               <i class="fa fa-instagram tarq-white ph1"></i>
             </a>
           </div>
           <div class="left">
-          <a class="tarq-white" href="<?= $chimp_website ?>" target="_blank">
-          &copy; <?= $chimp_title ?>
+          <a class="tarq-white" href="<?=$chimp_website?>" target="_blank">
+          &copy; <?=$chimp_title?>
             </a>
           </div>
         </div>
@@ -93,8 +93,8 @@
     </p>
     <script type="text/javascript">
       (function() {
-        var chimpBackground = '<?= $chimp_background ?>';
-        var chimpForeground = '<?= $chimp_foreground ?>';
+        var chimpBackground = '<?=$chimp_background?>';
+        var chimpForeground = '<?=$chimp_foreground?>';
 
         var icon = document.querySelector(".icon_menu");
         var navBar = document.querySelector(".header-wrapper");
