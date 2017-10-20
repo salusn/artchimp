@@ -28,6 +28,8 @@
       <h3>Artworks</h3>
         <?php print views_embed_view('list_works', 'block_1');?>
 
+      <h3>Publications</h3>
+        <?php print views_embed_view('list_publications', 'block_1');?>
 
         <?php endif;?>
 
