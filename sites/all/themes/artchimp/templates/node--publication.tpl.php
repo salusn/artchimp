@@ -17,6 +17,20 @@
           </div>
           </div>
         <?php endif;?>
+
+        <?php if (!$isDetailPage): ?>
+          <div class="<?=$isDetailPage ? "post-img" : "";?>">
+            <?=render($content['field_photo']);?>
+          </div>
+          <div class="jikku-meta lh-solid mt3 mb5">
+            <div class="post-prev-title mb-5">
+              <h3<?php print $title_attributes;?>><a href="<?=$node_url?>">
+                <?php print $title;?>
+              </a><h3>
+            </div>
+          </div>
+        <?php endif;?>
+
     </div>
   </div>
 </div>
