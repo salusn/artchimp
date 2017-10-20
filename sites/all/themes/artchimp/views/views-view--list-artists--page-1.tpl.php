@@ -6,7 +6,7 @@
 	?>
       <div class="col-md-4 col-sm-3 mb5">
           <div class="member-image">
-              <?=$photo?>
+             <?php print $value['field_selected_work'];?>
           </div>
           <div class="f2 b mv3"><?=$name?></div>
       </div>
