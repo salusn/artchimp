@@ -88,7 +88,7 @@ function artchimp_form_alter(&$form, &$form_state, $form_id) {
 
       break;   
 
-       case "section_node_form":
+      case "section_node_form":
       if(arg(2) == "edit") {
         $form['actions']['submit']['#submit'][] = 'artchimp_sectioneditsubmit';              
       }
@@ -97,9 +97,17 @@ function artchimp_form_alter(&$form, &$form_state, $form_id) {
        drupal_set_title($section_node->title);
       }
 
-      break;    
-
+      break;   
      } 
+}
+
+function artchimp_user_login(&$edit, $account) {
+
+  if($account->roles[2] && $account->roles[4]) {
+    $edit['redirect'] = 'users/'.$account->name;
+  } else {
+  $edit['redirect'] = 'exhibitions';
+  }
 }
 
 function _artchimp_editsubmit($form, &$form_state){
