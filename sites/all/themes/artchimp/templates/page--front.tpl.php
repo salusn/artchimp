@@ -1,6 +1,7 @@
 <?php
 global $base_url, $user;
 $path_to_theme = $base_url . '/' . drupal_get_path('theme', 'artchimp');
+$logo = $path_to_theme . '/' . 'logo.png';
 
 if (user_is_anonymous()) {
 	$user_data = user_load(1);
@@ -8,7 +9,7 @@ if (user_is_anonymous()) {
 	$user_data = user_load($user->uid);
 }
 
-$logo = file_create_url($user_data->field_logo['und']['0']['uri']);
+//$logo = file_create_url($user_data->field_logo['und']['0']['uri']);
 $chimp_title = 'ArtChimp';
 $chimp_logo = $logo;
 $chimp_foreground = $user_data->field_foreground_colour['und']['0']['jquery_colorpicker'];
