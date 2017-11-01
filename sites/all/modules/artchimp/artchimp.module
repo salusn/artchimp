@@ -101,14 +101,14 @@ function artchimp_form_alter(&$form, &$form_state, $form_id) {
      } 
 }
 
-// function artchimp_user_login(&$edit, $account) {
+function artchimp_user_login(&$edit, $account) {
 
-//   if($account->roles[2] && $account->roles[4]) {
-//     $edit['redirect'] = 'users/'.$account->name;
-//   } else {
-//   $edit['redirect'] = 'exhibitions';
-//   }
-// }
+  if($account->roles[2] && $account->roles[4]) {
+    $edit['redirect'] = 'users/'.$account->name;
+  } else {
+  $edit['redirect'] = 'exhibitions';
+  }
+}
 
 function _artchimp_editsubmit($form, &$form_state){
  
