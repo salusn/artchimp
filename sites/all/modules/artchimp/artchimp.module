@@ -104,7 +104,7 @@ function artchimp_form_alter(&$form, &$form_state, $form_id) {
 function artchimp_user_login(&$edit, $account) {
 
   if($account->roles[2] && $account->roles[4]) {
-    $edit['redirect'] = 'users/'.$account->name;
+    $edit['redirect'] = 'http://artchimpadmin.lylochat.com/';
   } else {
   $edit['redirect'] = 'exhibitions';
   }
