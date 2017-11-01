@@ -105,7 +105,7 @@ function artchimp_user_login(&$edit, $account) {
 
   if($account->roles[2] && $account->roles[4]) {
     //$edit['redirect'] = 'users/'.$account->name;
-    $edit['redirect'] = $account->name.'lylochat.com';
+    $edit['redirect'] = 'http://'.$account->name.'lylochat.com';
   } else {
   $edit['redirect'] = 'exhibitions';
   }
