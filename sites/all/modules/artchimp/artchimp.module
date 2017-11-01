@@ -102,7 +102,7 @@ function artchimp_form_alter(&$form, &$form_state, $form_id) {
 }
 
 function artchimp_user_login(&$edit, $account) {
-print_r($account);exit;
+
   if($account->roles[2] && $account->roles[4]) {
     $edit['redirect'] = 'users/'.$account->name;
   } else {
